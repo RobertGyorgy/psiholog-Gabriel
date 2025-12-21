@@ -18,7 +18,7 @@ export default function TestimonialHomeOne() {
                 {renderStars(5)}
               </div>
               <div className="azzle-iconbox-content2">
-                <p>"This AI SaaS tool has revolutionized the way we process and analyze data. This is a game-changer for our business."</p></p>
+                <p>"This AI SaaS tool has revolutionized the way we process and analyze data. This is a game-changer for our business."</p>
               </div>
               <div className="azzle-iconbox-author-wrap" style={{ marginTop: "20px" }}>
                 <div className="azzle-iconbox-author-data">
