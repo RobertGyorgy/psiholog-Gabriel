@@ -24,6 +24,7 @@ html, body {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 /* Header Section */
@@ -48,11 +49,32 @@ html, body {
 	}
 }
 
+@media (min-width: 768px) {
+	.azzle-header-section {
+		width: calc(100% - 80px);
+		max-width: 700px;
+	}
+}
+
 @media (min-width: 992px) {
 	.azzle-header-section {
 		top: 20px;
+		width: calc(100% - 120px);
+		max-width: 1100px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.azzle-header-section {
+		width: calc(100% - 150px);
+		max-width: 1200px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.azzle-header-section {
 		width: calc(100% - 200px);
-		max-width: 950px;
+		max-width: 1300px;
 	}
 }
 
@@ -60,6 +82,25 @@ html, body {
 	padding: 0;
 	max-width: 100%;
 	border: none;
+	gap: 12px !important;
+}
+
+@media (min-width: 768px) {
+	.azzle-header-section .container {
+		gap: 14px !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.azzle-header-section .container {
+		gap: 16px !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.azzle-header-section .container {
+		gap: 20px !important;
+	}
 }
 
 .header-logo {
@@ -87,6 +128,14 @@ html, body {
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	font-size: 13px;
+	white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+	.azzle-main-menu-item {
+		padding: 11px 18px;
+		font-size: 13.5px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -96,15 +145,35 @@ html, body {
 	}
 }
 
+@media (min-width: 1200px) {
+	.azzle-main-menu-item {
+		padding: 12px 24px;
+		font-size: 15px;
+	}
+}
+
 .azzle-header-section .main-menu a {
 	color: rgb(16, 49, 107);
 	font-weight: 600;
-	padding: 0 6px;
+	padding: 0 4px;
+	white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+	.azzle-header-section .main-menu a {
+		padding: 0 6px;
+	}
 }
 
 @media (min-width: 992px) {
 	.azzle-header-section .main-menu a {
 		padding: 0 8px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.azzle-header-section .main-menu a {
+		padding: 0 10px;
 	}
 }
 

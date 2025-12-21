@@ -7,7 +7,7 @@ export default function HeaderOne() {
   const { sticky, hidden } = UseSticky();
   return (
     <header className={`site-header azzle-header-section ${sticky ? "sticky-menu" : ""} ${hidden ? "hide-header" : ""}`} id="sticky-menu">
-      <div className="container" style={{ display: "flex", gap: "20px", alignItems: "center", justifyContent: "center" }}>
+      <div className="container" style={{ display: "flex", gap: "12px", alignItems: "center", justifyContent: "center" }}>
         {/* Island 1: Logo */}
         <div style={{ display: "flex", alignItems: "center", padding: "12px 20px", borderRadius: "50px", background: "#FDBE34", boxShadow: "0 8px 32px 0 rgba(253, 190, 52, 0.2)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}>
           <div className="header-logo">
