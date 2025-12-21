@@ -1,0 +1,402 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Phudu:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Phudu:wght@300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Phudu:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Phudu:wght@300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ 
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+@import "../../public/assets/css/bootstrap.min.css";  
+@import "../../public/assets/css/aos.css"; 
+@import "../../public/assets/css/magnific-popup.css"; 
+@import "../../public/assets/css/remixicon.css"; 
+@import "../../public/assets/css/clashdisplay.css"; 
+@import "../../public/assets/css/main.css"; 
+@import "../../public/assets/css/app.min.css";
+
+/* Header Section */
+.azzle-header-section {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 200px);
+	max-width: 1200px;
+	z-index: 1000;
+	background: transparent;
+	padding: 0;
+	border: none;
+}
+
+.azzle-header-section .container {
+	padding: 0;
+	max-width: 100%;
+	border: none;
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo a img {
+	max-width: 80px;
+	height: auto;
+}
+
+/* Navigation */
+.azzle-main-menu-item {
+	background: #FDBE34;
+	border-radius: 50px;
+	padding: 12px 20px;
+	box-shadow: 0 8px 32px 0 rgba(253, 190, 52, 0.2);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+}
+
+.azzle-header-section .main-menu a {
+	color: rgb(16, 49, 107);
+	font-weight: 600;
+	padding: 0 8px;
+}
+
+.azzle-header-section .main-menu a:hover {
+	color: #fff;
+}
+
+/* Contact Button Styling */
+.contact-cta-btn.azzle-default-btn {
+	background: #FDBE34 !important;
+	color: rgb(16, 49, 107) !important;
+	padding: 14px 28px !important;
+	border-radius: 50px !important;
+	border: none !important;
+	box-shadow: 0 8px 32px 0 rgba(253, 190, 52, 0.2);
+	transition: all 0.3s ease;
+}
+
+.contact-cta-btn.azzle-default-btn:hover {
+	background: var(--heading-color) !important;
+	color: white !important;
+	box-shadow: 0 8px 25px rgba(16, 49, 107, 0.4);
+	transform: none !important;
+}
+
+@media (max-width: 991px) {
+	.azzle-header-section {
+		width: calc(100% - 40px);
+		top: 15px;
+	}
+	
+	.header-logo a img {
+		max-width: 70px;
+	}
+}
+
+@media (max-width: 576px) {
+	.azzle-header-section {
+		width: calc(100% - 20px);
+		top: 10px;
+	}
+	
+	.header-logo a img {
+		max-width: 60px;
+	}
+}
+
+/* Blog Posts Styling */
+.azzle-pricing-wrap {
+	background: white;
+	border: 2px solid rgba(253, 190, 52, 0.3);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease;
+}
+
+.azzle-pricing-wrap.active {
+	border: none;
+}
+
+.azzle-pricing-wrap:hover {
+	box-shadow: 0 8px 30px rgba(253, 190, 52, 0.3);
+	transform: translateY(-5px);
+	border-color: rgba(253, 190, 52, 0.5);
+}
+
+.azzle-pricing-header h3 {
+	color: rgb(16, 49, 107);
+	font-weight: 700;
+}
+
+.azzle-pricing-body p {
+	color: #333;
+	line-height: 1.7;
+}
+
+/* Gradient and background updates */
+:root {
+	--gradient-blue-gold: linear-gradient(135deg, rgba(16, 55, 92, 0.3) 0%, rgba(243, 198, 35, 0.25) 100%);
+	--gradient-gold-blue: linear-gradient(135deg, rgba(243, 198, 35, 0.35) 0%, rgba(16, 55, 92, 0.3) 100%);
+	--gradient-blue-dark: linear-gradient(180deg, rgba(16, 55, 92, 0.2) 0%, rgba(16, 55, 92, 0.35) 100%);
+}
+
+/* Add blue/gold gradient backgrounds to sections */
+.azzle-feature-section,
+.azzle-about-section,
+.azzle-service-section,
+.azzle-portfolio-section,
+.azzle-blog-section,
+.azzle-team-section {
+	background: var(--gradient-blue-gold) !important;
+	position: relative;
+}
+
+/* Dark matte blue background for hero section */
+.azzle-hero-section {
+		background: #10316B !important;
+	position: relative;
+}
+
+.azzle-hero-section h1,
+.azzle-hero-section h2,
+.azzle-hero-section h3,
+.azzle-hero-section h4,
+.azzle-hero-section h5,
+.azzle-hero-section h6,
+.azzle-hero-section p {
+		color: #FDBE34 !important;
+}
+
+.azzle-hero-section .azzle-hero-content1 > p,
+.azzle-hero-section .azzle-hero-content2 > p,
+.azzle-hero-section .azzle-hero-content3 > p {
+		color: #FDBE34 !important;
+}
+
+/* Pill-shaped buttons in hero section */
+.azzle-hero-section .azzle-default-btn {
+	border-radius: 50px !important;
+}
+
+.azzle-feature-section::before,
+.azzle-about-section::before,
+.azzle-service-section::before {
+	content: '';
+	position: absolute;
+	width: 400px;
+	height: 400px;
+		background: radial-gradient(circle, rgba(16, 55, 92, 0.4) 0%, transparent 70%);
+	border-radius: 50%;
+	top: -150px;
+	right: -150px;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.azzle-feature-section::after,
+.azzle-about-section::after {
+	content: '';
+	position: absolute;
+	width: 350px;
+	height: 350px;
+		background: radial-gradient(circle, rgba(243, 198, 35, 0.45) 0%, transparent 70%);
+	border-radius: 50%;
+	bottom: -100px;
+	left: -100px;
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* Update section backgrounds */
+.azzle-feature-item,
+.azzle-service-item,
+.azzle-pricing-item {
+		background: linear-gradient(135deg, rgba(244, 246, 255, 0.95) 0%, rgba(16, 55, 92, 0.08) 100%);
+		border: 2px solid rgba(243, 198, 35, 0.4) !important;
+}
+
+.azzle-feature-item:hover,
+.azzle-service-item:hover {
+		background: linear-gradient(135deg, rgba(244, 246, 255, 0.99) 0%, rgba(243, 198, 35, 0.15) 100%);
+		border-color: rgba(243, 198, 35, 0.7) !important;
+		box-shadow: 0 15px 40px rgba(16, 55, 92, 0.2);
+}
+
+/* Gradient accent elements */
+.azzle-default-btn {
+		background: linear-gradient(135deg, rgba(243, 198, 35, 1) 0%, rgba(243, 198, 35, 0.9) 100%) !important;
+		color: rgba(16, 55, 92, 1) !important;
+	border: none !important;
+	font-weight: 700 !important;
+	padding: 14px 28px !important;
+	border-radius: 50px !important;
+	transition: all 0.3s ease !important;
+	box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.azzle-default-btn:hover {
+		background: linear-gradient(135deg, rgba(243, 198, 35, 1) 0%, rgba(243, 198, 35, 0.9) 100%) !important;
+		color: rgba(16, 55, 92, 1) !important;
+		box-shadow: 0 8px 25px rgba(243, 198, 35, 0.5);
+	transform: translateY(-2px);
+}
+
+.azzle-default-btn.outline-btn,
+.azzle-default-btn.outline-btn3 {
+	background: transparent !important;
+		color: rgba(243, 198, 35, 1) !important;
+		border: 2px solid rgba(243, 198, 35, 1) !important;
+	border-radius: 50px !important;
+}
+
+.contact-cta-btn.azzle-default-btn.outline-btn {
+	border-color: var(--heading-color) !important;
+	color: var(--heading-color) !important;
+	padding: 12px 32px !important;
+	border-radius: 50px !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	text-decoration: none !important;
+	background: transparent !important;
+}
+
+.contact-cta-btn.azzle-default-btn.outline-btn:hover {
+	background: var(--heading-color) !important;
+	color: white !important;
+	border-color: var(--heading-color) !important;
+	box-shadow: 0 8px 25px rgba(16, 49, 107, 0.4);
+	transform: translateY(-2px);
+}
+
+.azzle-default-btn.outline-btn:hover,
+.azzle-default-btn.outline-btn3:hover {
+		background: rgba(243, 198, 35, 1) !important;
+		color: rgba(16, 55, 92, 1) !important;
+		box-shadow: 0 8px 25px rgba(243, 198, 35, 0.4);
+	transform: translateY(-2px);
+}
+
+.azzle-default-btn.btn2 {
+		background: linear-gradient(135deg, rgba(243, 198, 35, 1) 0%, rgba(243, 198, 35, 0.9) 100%) !important;
+		color: rgba(16, 55, 92, 1) !important;
+}
+
+.azzle-default-btn.btn2:hover {
+		background: linear-gradient(135deg, rgba(243, 198, 35, 1) 0%, rgba(243, 198, 35, 0.9) 100%) !important;
+		box-shadow: 0 8px 25px rgba(243, 198, 35, 0.5);
+	transform: translateY(-2px);
+}
+
+/* Button wrapper text color */
+.azzle-default-btn .button-wraper {
+	display: inline-block;
+	transition: all 0.3s ease;
+}
+
+.azzle-default-btn svg {
+	transition: all 0.3s ease;
+}
+
+.azzle-default-btn:hover svg {
+	transform: translateX(2px);
+}
+.header-logo {
+	display: flex;
+	align-items: center;
+}
+
+.azzle-header-section .container {
+	width: 100% !important;
+	max-width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.azzle-header-section .row {
+	margin: 0 !important;
+}
+
+.azzle-header-section .col-8,
+.azzle-header-section .col,
+.azzle-header-section .col-auto {
+	padding: 0 8px;
+}
+
+@media (max-width: 991px) {
+	body {
+		padding-top: 50px;
+	}
+	
+	.header-logo a img {
+		max-width: 70px !important;
+	}
+}
+
+@media (max-width: 576px) {
+	body {
+		padding-top: 45px;
+	}
+	
+	.header-logo a img {
+		max-width: 60px !important;
+	}
+}
+
+/* Blue background sections with updated text colors */
+.azzle-section-padding.pt-0 {
+		background: var(--heading-color) !important;
+	color: #fff !important;
+}
+
+/* First section - rounded top corners */
+.blue-section-top {
+	border-radius: 50px 50px 0 0 !important;
+}
+
+/* Second section - rounded bottom corners */
+.blue-section-bottom {
+	border-radius: 0 0 50px 50px !important;
+}
+
+.azzle-section-padding.pt-0 h2 {
+		color: #F3C623 !important;
+}
+
+.azzle-section-padding.pt-0 p {
+	color: #f0f0f0 !important;
+}
+
+.azzle-section-padding.pt-0 h3 {
+	color: #fff !important;
+}
+
+/* Updated arrow SVG colors in the list */
+.azzle-section-padding.pt-0 .azzle-listicon-wrap img {
+	filter: brightness(0) saturate(100%) invert(78%) sepia(57%) saturate(1054%) hue-rotate(347deg) brightness(102%) contrast(98%);
+}
+
+/* Modal animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes modalSlideIn {
+	from {
+		opacity: 0;
+		transform: scale(0.8) translateY(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
