@@ -38,8 +38,8 @@ export default function PricingHomeOne() {
               <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
                 <InteractiveHoverButton 
                   text="Read More" 
-                  className="w-40 !bg-white !text-[rgb(16,49,107)]"
-                  style={{ minHeight: '48px', backgroundColor: 'white', color: 'rgb(16,49,107)' }}
+                  className="w-40 !bg-white !text-[rgba(36,41,60)]"
+                  style={{ minHeight: '48px', backgroundColor: 'white', color: 'rgba(36, 41, 60)' }}
                 />
               </div>
             </div>
@@ -65,8 +65,8 @@ export default function PricingHomeOne() {
               <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
                 <InteractiveHoverButton 
                   text="Read More" 
-                  className="w-40 !bg-[#FDBE34] !text-[rgb(16,49,107)] hover-gold-border"
-                  style={{ minHeight: '48px', backgroundColor: '#FDBE34', color: 'rgb(16,49,107)' }}
+                  className="w-40 !bg-[#FDBE34] !text-[rgba(36,41,60)] hover-gold-border"
+                  style={{ minHeight: '48px', backgroundColor: '#FDBE34', color: 'rgba(36, 41, 60)' }}
                 />
               </div>
             </div>
@@ -92,8 +92,8 @@ export default function PricingHomeOne() {
               <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
                 <InteractiveHoverButton 
                   text="Read More" 
-                  className="w-40 !bg-white !text-[rgb(16,49,107)]"
-                  style={{ minHeight: '48px', backgroundColor: 'white', color: 'rgb(16,49,107)' }}
+                  className="w-40 !bg-white !text-[rgba(36,41,60)]"
+                  style={{ minHeight: '48px', backgroundColor: 'white', color: 'rgba(36, 41, 60)' }}
                 />
               </div>
             </div>

@@ -82,7 +82,7 @@ const InteractiveHoverButton = React.forwardRef<
           width: 8px;
           height: 8px;
           border-radius: 8px;
-          background-color: rgb(16, 49, 107);
+          background-color: #24293c;
           transform: scale(1);
           transition: all 0.3s ease;
         }
@@ -94,6 +94,11 @@ const InteractiveHoverButton = React.forwardRef<
           height: 100%;
           border-radius: 9999px;
           transform: scale(1.8);
+        }
+        
+        /* Yellow variant for Learn More button */
+        .interactive-hover-button.yellow-hover .button-background {
+          background-color: #FDBE34;
         }
       `}</style>
     </button>
