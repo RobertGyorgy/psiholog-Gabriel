@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Slider from "react-slick";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 const settings = {
   slidesToShow: 4,
@@ -34,13 +35,19 @@ export default function HeroHomeOne() {
             <div className="azzle-hero-content1">
               <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "64px", paddingBottom: "20px" }}>Simplify your SaaS solution with AI</h1>
               <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "18px" }}>Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand for products and services and optimize inventory management and supply chain operations.</p>
-              <div className="azzle-hero-button mt-50">
-                <Link className="azzle-default-btn" data-aos="fade-up" data-aos-delay="900" href="#contact" data-text="Get started for free">
-                  <span className="button-wraper">Get started for free</span>
-                </Link>
-                <Link className="azzle-default-btn outline-btn" data-aos="fade-up" data-aos-delay="1000" href="#contact" data-text="Learn more">
-                  <span className="button-wraper">Learn more</span>
-                </Link>
+              <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                <InteractiveHoverButton 
+                  text="Get Started" 
+                  onClick={() => window.location.href = '#contact'}
+                  className="w-44 !bg-[#FDBE34] !text-[rgb(16,49,107)] !border-[#FDBE34] !border-2"
+                  style={{ minHeight: '48px' }}
+                />
+                <InteractiveHoverButton 
+                  text="Learn More" 
+                  onClick={() => window.location.href = '#contact'}
+                  className="w-44 !bg-white !text-[rgb(16,49,107)] !border-[rgb(16,49,107)] !border-2"
+                  style={{ minHeight: '48px' }}
+                />
               </div>
             </div>
           </div>

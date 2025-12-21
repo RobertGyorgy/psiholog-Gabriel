@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 export default function PricingHomeOne() { 
   return (
@@ -34,13 +35,12 @@ export default function PricingHomeOne() {
                   Learn the fundamentals of artificial intelligence and how it can transform your business operations with practical examples.
                 </p>
               </div>
-              <div className="azzle-pricing-footer mt-50">
-                <Link
-                  className="azzle-default-btn d-block outline-btn"
-                  href="/blog/getting-started-ai"
-                >
-                  Read More
-                </Link>
+              <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
+                <InteractiveHoverButton 
+                  text="Read More" 
+                  className="w-40 !bg-white !text-[rgb(16,49,107)]"
+                  style={{ minHeight: '48px', backgroundColor: 'white', color: 'rgb(16,49,107)' }}
+                />
               </div>
             </div>
           </div>
@@ -62,13 +62,12 @@ export default function PricingHomeOne() {
                   Explore the cutting-edge trends in machine learning and discover how modern AI is reshaping industries and creating new opportunities.
                 </p>
               </div>
-              <div className="azzle-pricing-footer mt-50">
-                <Link
-                  className="azzle-default-btn d-block outline-btn btn2"
-                  href="/blog/future-machine-learning"
-                >
-                  Read More
-                </Link>
+              <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
+                <InteractiveHoverButton 
+                  text="Read More" 
+                  className="w-40 !bg-[#FDBE34] !text-[rgb(16,49,107)] hover-gold-border"
+                  style={{ minHeight: '48px', backgroundColor: '#FDBE34', color: 'rgb(16,49,107)' }}
+                />
               </div>
             </div>
           </div>
@@ -90,13 +89,12 @@ export default function PricingHomeOne() {
                   Discover proven strategies and best practices for successfully implementing AI solutions in your organization without disrupting operations.
                 </p>
               </div>
-              <div className="azzle-pricing-footer mt-50">
-                <Link
-                  className="azzle-default-btn d-block outline-btn"
-                  href="/blog/ai-implementation-practices"
-                >
-                  Read More
-                </Link>
+              <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
+                <InteractiveHoverButton 
+                  text="Read More" 
+                  className="w-40 !bg-white !text-[rgb(16,49,107)]"
+                  style={{ minHeight: '48px', backgroundColor: 'white', color: 'rgb(16,49,107)' }}
+                />
               </div>
             </div>
           </div>
