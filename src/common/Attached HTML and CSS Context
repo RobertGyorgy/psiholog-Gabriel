@@ -1,0 +1,539 @@
+/* Matched Rule from user-agent */
+video, canvas, img {
+  overflow-x: clip;
+  overflow-y: clip;
+  overflow-clip-margin: content-box;
+}
+
+/* Matched Rule from regular */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Matched Rule from regular */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Matched Rule from regular */
+img, svg {
+  vertical-align: middle;
+  vertical-align: middle;
+}
+
+/* Matched Rule from regular */
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+  vertical-align: middle;
+}
+
+/* Matched Rule from regular */
+img {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+/* Matched Rule from regular */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+.azzle-hero-shape {
+  position: absolute;
+  top: 17%;
+  right: 0;
+  position: absolute;
+  top: 17%;
+  right: 0px;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+.azzle-hero-section {
+  position: relative;
+  border-radius: 0 0 50px 50px;
+  background-color: var(--light-color2);
+  padding: 195px 0 130px;
+  position: relative;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: var(--light-color2);
+  padding-top: 195px;
+  padding-right: 0px;
+  padding-bottom: 130px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 4 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 4 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 4 (regular) */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 4 (regular) */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 5 (user-agent) */
+body {
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  color: var(--heading-color);
+  font-family: Inter, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: var(--light-color);
+  counter-reset: my-sec-counter;
+  font-size: 21px;
+  line-height: 1.43em;
+  color: var(--heading-color);
+  font-family: Inter, serif;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
+  text-rendering: optimizelegibility;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: var(--light-color);
+  counter-reset: my-sec-counter 0;
+  font-size: 21px;
+  line-height: 1.43em;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+body {
+  padding-top: 60px;
+  overflow-x: visible !important;
+  padding-top: 60px;
+  overflow-x: visible !important;
+}
+
+/* Inherited from ancestor level 6 (user-agent) */
+html {
+  display: block;
+}
+
+/* Inherited from ancestor level 6 (user-agent) */
+:root {
+  view-transition-name: root;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+*, ::after, ::before {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+*, ::after, ::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+html {
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13,110,253;
+  --bs-secondary-rgb: 108,117,125;
+  --bs-success-rgb: 25,135,84;
+  --bs-info-rgb: 13,202,240;
+  --bs-warning-rgb: 255,193,7;
+  --bs-danger-rgb: 220,53,69;
+  --bs-light-rgb: 248,249,250;
+  --bs-dark-rgb: 33,37,41;
+  --bs-white-rgb: 255,255,255;
+  --bs-black-rgb: 0,0,0;
+  --bs-body-color-rgb: 33,37,41;
+  --bs-body-bg-rgb: 255,255,255;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13,110,253;
+  --bs-secondary-rgb: 108,117,125;
+  --bs-success-rgb: 25,135,84;
+  --bs-info-rgb: 13,202,240;
+  --bs-warning-rgb: 255,193,7;
+  --bs-danger-rgb: 220,53,69;
+  --bs-light-rgb: 248,249,250;
+  --bs-dark-rgb: 33,37,41;
+  --bs-white-rgb: 255,255,255;
+  --bs-black-rgb: 0,0,0;
+  --bs-body-color-rgb: 33,37,41;
+  --bs-body-bg-rgb: 255,255,255;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --heading-color: rgba(0, 0, 128, 1);
+  --heading-bg: rgba(0, 0, 128, 1);
+  --accent-color: rgba(212, 175, 55, 1);
+  --accent-bg: rgba(212, 175, 55, 1);
+  --light-color: rgba(255, 255, 255, 1);
+  --light-color2: rgba(240, 240, 240, 1);
+  --light-color3: rgba(230, 230, 230, 1);
+  --light-color4: rgba(100, 100, 100, 1);
+  --light-color5: rgba(250, 250, 250, 1);
+  --light-color6: rgba(50, 50, 50, 1);
+  --light-color7: rgba(245, 245, 245, 1);
+  --light-color8: rgba(220, 220, 220, 1);
+  --border-color: rgba(212, 175, 55, 1);
+  --variable-color1: rgba(240, 240, 240, 1);
+  --variable-color2: rgba(0, 0, 128, 1);
+  --variable-color3: rgba(50, 50, 50, 1);
+  --variable-color4: rgba(0, 0, 128, 1);
+  --variable-color5: rgba(212, 175, 55, 1);
+  --variable-color6: rgba(212, 175, 55, 1);
+  --heading-color: rgba(0, 0, 128, 1);
+  --heading-bg: rgba(0, 0, 128, 1);
+  --accent-color: rgba(212, 175, 55, 1);
+  --accent-bg: rgba(212, 175, 55, 1);
+  --light-color: rgba(255, 255, 255, 1);
+  --light-color2: rgba(240, 240, 240, 1);
+  --light-color3: rgba(230, 230, 230, 1);
+  --light-color4: rgba(100, 100, 100, 1);
+  --light-color5: rgba(250, 250, 250, 1);
+  --light-color6: rgba(50, 50, 50, 1);
+  --light-color7: rgba(245, 245, 245, 1);
+  --light-color8: rgba(220, 220, 220, 1);
+  --border-color: rgba(212, 175, 55, 1);
+  --variable-color1: rgba(240, 240, 240, 1);
+  --variable-color2: rgba(0, 0, 128, 1);
+  --variable-color3: rgba(50, 50, 50, 1);
+  --variable-color4: rgba(0, 0, 128, 1);
+  --variable-color5: rgba(212, 175, 55, 1);
+  --variable-color6: rgba(212, 175, 55, 1);
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --fs-xl-20: 20px;
+  --fs-xl-lineheight: 32px;
+  --fs-lg-18: 18px;
+  --fs-lg-lineheight: 28px;
+  --fs-md-16: 16px;
+  --fs-md-lineheight: 24px;
+  --fs-xs-14: 14px;
+  --fs-xs-lineheight: 22px;
+  --fs-xss-12: 12px;
+  --fs-xss-lineheight: 20px;
+  --fs-xl-20: 20px;
+  --fs-xl-lineheight: 32px;
+  --fs-lg-18: 18px;
+  --fs-lg-lineheight: 28px;
+  --fs-md-16: 16px;
+  --fs-md-lineheight: 24px;
+  --fs-xs-14: 14px;
+  --fs-xs-lineheight: 22px;
+  --fs-xss-12: 12px;
+  --fs-xss-lineheight: 20px;
+}
+
+/* Inherited from ancestor level 6 (regular) */
+:root {
+  --gradient-blue-gold: linear-gradient(135deg, rgba(0, 0, 128, 0.3) 0%, rgba(212, 175, 55, 0.25) 100%);
+  --gradient-gold-blue: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(0, 0, 128, 0.3) 100%);
+  --gradient-blue-dark: linear-gradient(180deg, rgba(0, 0, 128, 0.2) 0%, rgba(0, 0, 128, 0.35) 100%);
+  --gradient-blue-gold: linear-gradient(135deg, rgba(0, 0, 128, 0.3) 0%, rgba(212, 175, 55, 0.25) 100%);
+  --gradient-gold-blue: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(0, 0, 128, 0.3) 100%);
+  --gradient-blue-dark: linear-gradient(180deg, rgba(0, 0, 128, 0.2) 0%, rgba(0, 0, 128, 0.35) 100%);
+}
