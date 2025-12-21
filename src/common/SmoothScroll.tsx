@@ -19,7 +19,7 @@ export default function SmoothScroll() {
           const targetElement = document.getElementById(targetId);
           
           if (targetElement) {
-            // Calculate offset for fixed navbar (approximately 100px)
+            // Calculate offset for fixed navbar
             const navbarHeight = 100;
             const elementPosition = targetElement.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
@@ -30,17 +30,25 @@ export default function SmoothScroll() {
               behavior: "smooth",
             });
             
-            // Force AOS to recalculate and refresh animations multiple times
-            const refreshAOS = () => {
+            // Force show all AOS elements in the target section
+            setTimeout(() => {
+              const aosElements = targetElement.querySelectorAll('[data-aos]');
+              aosElements.forEach((el) => {
+                el.classList.add('aos-animate');
+              });
+              
+              // Refresh AOS
               if (typeof window !== "undefined" && (window as any).AOS) {
-                (window as any).AOS.refreshHard();
+                (window as any).AOS.refresh();
               }
-            };
+            }, 300);
             
-            // Refresh immediately and after scroll completes
-            setTimeout(refreshAOS, 100);
-            setTimeout(refreshAOS, 500);
-            setTimeout(refreshAOS, 1000);
+            // Additional refresh after scroll completes
+            setTimeout(() => {
+              if (typeof window !== "undefined" && (window as any).AOS) {
+                (window as any).AOS.refresh();
+              }
+            }, 800);
           }
         }
       }
