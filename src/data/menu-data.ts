@@ -17,9 +17,9 @@ const menu_data: MenuItem[] = [
   { title: "Home", has_submenu: false, path: "/" },
   { title: "About", has_submenu: false, path: "#about" },
   { title: "Features", has_submenu: false, path: "#features" },
-  { title: "Services", has_submenu: false, path: "#services" },
-  { title: "Portfolio", has_submenu: false, path: "#portfolio" },
-  { title: "Team", has_submenu: false, path: "#team" },
+  { title: "Blog", has_submenu: false, path: "#portfolio" },
+  { title: "FAQ", has_submenu: false, path: "#faq" },
+  { title: "Contact", has_submenu: false, path: "#contact" },
 ];
 
 
