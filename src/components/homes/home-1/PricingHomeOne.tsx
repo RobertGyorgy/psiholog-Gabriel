@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function PricingHomeOne() { 
   return (
-    <div className="azzle-section-padding2 position-r" style={{ paddingTop: "200px" }}>
+    <div id="portfolio" className="azzle-section-padding2 position-r" style={{ paddingTop: "200px" }}>
       <div className="azzle-pricing-shape" style={{ backgroundColor: "#f5f5f5", minHeight: "100px" }}>
       </div>
       <div className="container" style={{ paddingTop: "40px" }}>

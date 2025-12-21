@@ -43,7 +43,7 @@ export default function FooterOne() {
   }, []);
 
   return (
-    <footer className="azzle-footer-section">
+    <footer id="contact" className="azzle-footer-section">
       {/* CTA Slider */}
       <div className="azzle-footer-top inner-mwrquee-wra overflow-hidden">
         <div
@@ -94,7 +94,7 @@ export default function FooterOne() {
                   <li><Link href="/about-us">About Us</Link></li>
                   <li><Link href="/service">Services</Link></li>
                   <li><Link href="/pricing">Pricing</Link></li>
-                  <li><Link href="/contact-us">Contact</Link></li>
+                  <li><Link href="#contact">Contact</Link></li>
                 </ul>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function FooterOne() {
               <div className="azzle-footer-menu pl-70">
                 <h4>Utility Pages</h4>
                 <ul>
-                  <li><Link href="/faq">Faq</Link></li>
+                  <li><Link href="#faq">Faq</Link></li>
                   <li><Link href="/sign-up">Sign Up</Link></li>
                   <li><Link href="/sign-in">Sign In</Link></li>
                   <li><Link href="/reset-password">Reset Password</Link></li>

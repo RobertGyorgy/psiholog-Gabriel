@@ -49,7 +49,7 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
   };
 
   return (
-    <section className={`${style_2 ? 'azzle-section-padding6' : 'azzle-section-padding pt-0'}`} style={{ borderRadius: '50px 50px 0 0' }}>
+    <section id="faq" className={`${style_2 ? 'azzle-section-padding6' : 'azzle-section-padding pt-0'}`} style={{ borderRadius: '50px 50px 0 0' }}>
       <div className="container">
         <div className="row"> 
           <div className="col-lg-6">
@@ -70,7 +70,7 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                   className="azzle-default-btn"
                   data-aos="fade-up"
                   data-aos-delay="700"
-                  href="/faq"
+                  href="#faq"
                   data-text="Ask you questions"
                 >
                   <span className="button-wraper">Ask you questions</span>

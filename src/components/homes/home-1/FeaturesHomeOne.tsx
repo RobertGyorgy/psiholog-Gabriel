@@ -73,7 +73,7 @@ export default function FeaturesHomeOne() {
   };
   return (
     <>
-    <section className="azzle-section-padding">
+    <section id="features" className="azzle-section-padding">
       <div className="container">
         <div className="azzle-section-title max-width-780" data-aos="fade-left" data-aos-delay="500">
           <h2>Core features that make it valuable</h2>

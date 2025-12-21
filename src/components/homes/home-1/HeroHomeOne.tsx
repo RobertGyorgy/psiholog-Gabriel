@@ -35,10 +35,10 @@ export default function HeroHomeOne() {
               <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "64px", paddingBottom: "20px" }}>Simplify your SaaS solution with AI</h1>
               <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "18px" }}>Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand for products and services and optimize inventory management and supply chain operations.</p>
               <div className="azzle-hero-button mt-50">
-                <Link className="azzle-default-btn" data-aos="fade-up" data-aos-delay="900" href="/contact-us" data-text="Get started for free">
+                <Link className="azzle-default-btn" data-aos="fade-up" data-aos-delay="900" href="#contact" data-text="Get started for free">
                   <span className="button-wraper">Get started for free</span>
                 </Link>
-                <Link className="azzle-default-btn outline-btn" data-aos="fade-up" data-aos-delay="1000" href="/contact-us" data-text="Learn more">
+                <Link className="azzle-default-btn outline-btn" data-aos="fade-up" data-aos-delay="1000" href="#contact" data-text="Learn more">
                   <span className="button-wraper">Learn more</span>
                 </Link>
               </div>

@@ -40,7 +40,7 @@ export default function FooterTwo() {
                 <Link href="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link href="/contact-us">Contact</Link>
+                <Link href="#contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ export default function FooterTwo() {
             <h4>Utility pages</h4>
             <ul>
               <li>
-                <Link href="/faq">Faq</Link>
+                <Link href="#faq">Faq</Link>
               </li>
               <li>
                 <Link href="/sign-up">Sign Up</Link>

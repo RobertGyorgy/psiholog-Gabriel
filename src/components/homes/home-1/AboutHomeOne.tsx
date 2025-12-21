@@ -3,7 +3,7 @@
 export default function AboutHomeOne() {
   return (
     <>
-      <div className="azzle-section-padding pt-0 overflow-hidden blue-section-top" style={{ paddingTop: "100px !important", paddingBottom: "40px" }}>
+      <div id="about" className="azzle-section-padding pt-0 overflow-hidden blue-section-top" style={{ paddingTop: "100px !important", paddingBottom: "40px" }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-5">

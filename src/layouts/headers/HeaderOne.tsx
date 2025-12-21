@@ -27,7 +27,7 @@ export default function HeaderOne() {
         </div>
 
         {/* Island 3: Contact */}
-        <Link href="/contact-us" className="contact-cta-btn azzle-default-btn" style={{ padding: "14px 28px", borderRadius: "50px", textDecoration: "none", display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#FDBE34", border: "none", boxShadow: "0 8px 32px 0 rgba(253, 190, 52, 0.2)", color: "rgb(16, 49, 107)", fontWeight: 600 }}>Contact</Link>
+        <Link href="#contact" className="contact-cta-btn azzle-default-btn" style={{ padding: "14px 28px", borderRadius: "50px", textDecoration: "none", display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#FDBE34", border: "none", boxShadow: "0 8px 32px 0 rgba(253, 190, 52, 0.2)", color: "rgb(16, 49, 107)", fontWeight: 600 }}>Contact</Link>
       </div>
     </header>
   )
