@@ -29,20 +29,30 @@ html, body {
 /* Header Section */
 .azzle-header-section {
 	position: fixed;
-	top: 20px;
+	top: 15px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: calc(100% - 40px);
-	max-width: 1200px;
+	width: calc(100% - 60px);
+	max-width: 350px;
 	z-index: 1000;
 	background: transparent;
 	padding: 0;
 	border: none;
 }
 
+@media (min-width: 576px) {
+	.azzle-header-section {
+		top: 18px;
+		width: calc(100% - 50px);
+		max-width: 500px;
+	}
+}
+
 @media (min-width: 992px) {
 	.azzle-header-section {
+		top: 20px;
 		width: calc(100% - 200px);
+		max-width: 950px;
 	}
 }
 
@@ -58,24 +68,44 @@ html, body {
 }
 
 .header-logo a img {
-	max-width: 80px;
+	max-width: 60px;
 	height: auto;
+}
+
+@media (min-width: 992px) {
+	.header-logo a img {
+		max-width: 80px;
+	}
 }
 
 /* Navigation */
 .azzle-main-menu-item {
 	background: #FDBE34;
 	border-radius: 50px;
-	padding: 12px 20px;
+	padding: 10px 16px;
 	box-shadow: 0 8px 32px 0 rgba(253, 190, 52, 0.2);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
+	font-size: 13px;
+}
+
+@media (min-width: 992px) {
+	.azzle-main-menu-item {
+		padding: 12px 20px;
+		font-size: 14px;
+	}
 }
 
 .azzle-header-section .main-menu a {
 	color: rgb(16, 49, 107);
 	font-weight: 600;
-	padding: 0 8px;
+	padding: 0 6px;
+}
+
+@media (min-width: 992px) {
+	.azzle-header-section .main-menu a {
+		padding: 0 8px;
+	}
 }
 
 .azzle-header-section .main-menu a:hover {
@@ -404,4 +434,9 @@ html, body {
 		opacity: 1;
 		transform: scale(1) translateY(0);
 	}
+}
+/* FAQ smooth animations */
+.azzle-faq-body {
+	display: block !important;
+	overflow: hidden !important;
 }

@@ -48,10 +48,6 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
     }
   };
 
- 
-
-
-
   return (
     <section className={`${style_2 ? 'azzle-section-padding6' : 'azzle-section-padding pt-0'}`} style={{ borderRadius: '50px 50px 0 0' }}>
       <div className="container">
@@ -116,11 +112,18 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                       />
                     </div>
                   </div>
-                  {activeId === faq.id && (
-                    <div className="azzle-faq-body">
-                      <p>{faq.answer}</p>
-                    </div>
-                  )}
+                  <div 
+                    className="azzle-faq-body"
+                    style={{
+                      maxHeight: activeId === faq.id ? "500px" : "0px",
+                      overflow: "hidden",
+                      transition: "max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out",
+                      opacity: activeId === faq.id ? 1 : 0,
+                      paddingTop: activeId === faq.id ? "12px" : "0px",
+                    }}
+                  >
+                    <p>{faq.answer}</p>
+                  </div>
                 </div>
               ))}
             </div>
