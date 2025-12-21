@@ -94,7 +94,7 @@ export default function FeaturesHomeOne() {
                     onClick={() => openModal(feature)} 
                     className="azzle-default-btn"
                     style={{ 
-                      background: '#c6a764', 
+                      background: '#D4AF37', 
                       border: 'none', 
                       cursor: 'pointer', 
                       padding: '12px 28px',
@@ -109,7 +109,7 @@ export default function FeaturesHomeOne() {
                       e.currentTarget.style.color = '#fff';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.background = '#c6a764';
+                      e.currentTarget.style.background = '#D4AF37';
                       e.currentTarget.style.color = '#24293c';
                     }}
                   >
@@ -163,7 +163,7 @@ export default function FeaturesHomeOne() {
               position: 'absolute',
               top: '20px',
               right: '20px',
-              background: '#c6a764',
+              background: '#D4AF37',
               border: 'none',
               borderRadius: '50%',
               width: '40px',
