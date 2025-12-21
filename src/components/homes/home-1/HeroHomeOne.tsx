@@ -39,13 +39,13 @@ export default function HeroHomeOne() {
                 <InteractiveHoverButton 
                   text="Get Started" 
                   onClick={() => window.location.href = '#contact'}
-                  className="w-44 !bg-[#FDBE34] !text-[rgba(36,41,60)] !border-[#FDBE34] !border-2"
+                  className="w-44 !bg-[#c6a764] !text-[rgba(36,41,60)] !border-[#c6a764] !border-2"
                   style={{ minHeight: '48px' }}
                 />
                 <InteractiveHoverButton 
                   text="Learn More" 
                   onClick={() => window.location.href = '#contact'}
-                  className="w-44 yellow-hover !bg-white !text-[#FDBE34] !border-[#FDBE34] !border-2"
+                  className="w-44 yellow-hover !bg-white !text-[#c6a764] !border-[#c6a764] !border-2"
                   style={{ minHeight: '48px' }}
                 />
               </div>

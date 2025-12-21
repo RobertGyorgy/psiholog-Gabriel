@@ -65,8 +65,8 @@ export default function PricingHomeOne() {
               <div className="azzle-pricing-footer mt-50" style={{ display: "flex", justifyContent: "center" }}>
                 <InteractiveHoverButton 
                   text="Read More" 
-                  className="w-40 !bg-[#FDBE34] !text-[rgba(36,41,60)] hover-gold-border"
-                  style={{ minHeight: '48px', backgroundColor: '#FDBE34', color: 'rgba(36, 41, 60)' }}
+                  className="w-40 !bg-[#c6a764] !text-[rgba(36,41,60)] hover-gold-border"
+                  style={{ minHeight: '48px', backgroundColor: '#c6a764', color: 'rgba(36, 41, 60)' }}
                 />
               </div>
             </div>

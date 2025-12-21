@@ -9,7 +9,7 @@ export default function HeaderOne() {
     <header className={`site-header azzle-header-section ${sticky ? "sticky-menu" : ""} ${hidden ? "hide-header" : ""}`} id="sticky-menu">
       <div className="container" style={{ display: "flex", gap: "12px", alignItems: "center", justifyContent: "center" }}>
         {/* Island 1: Logo */}
-        <div style={{ display: "flex", alignItems: "center", padding: "12px 20px", borderRadius: "50px", background: "#FDBE34", boxShadow: "0 8px 32px 0 rgba(253, 190, 52, 0.2)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}>
+        <div style={{ display: "flex", alignItems: "center", padding: "12px 20px", borderRadius: "50px", background: "#c6a764", boxShadow: "0 8px 32px 0 rgba(198, 167, 100, 0.2)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}>
           <div className="header-logo">
             <Link href="/">
               <img src="/assets/images/logo-1-dark.svg" alt="logo" />   
@@ -27,7 +27,7 @@ export default function HeaderOne() {
         </div>
 
         {/* Island 3: Contact */}
-        <Link href="#contact" className="contact-cta-btn azzle-default-btn" style={{ padding: "14px 28px", borderRadius: "50px", textDecoration: "none", display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#FDBE34", border: "none", boxShadow: "0 8px 32px 0 rgba(253, 190, 52, 0.2)", color: "rgba(36, 41, 60)", fontWeight: 600 }}>Contact</Link>
+        <Link href="#contact" className="contact-cta-btn azzle-default-btn" style={{ padding: "14px 28px", borderRadius: "50px", textDecoration: "none", display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#c6a764", border: "none", boxShadow: "0 8px 32px 0 rgba(198, 167, 100, 0.2)", color: "rgba(36, 41, 60)", fontWeight: 600 }}>Contact</Link>
       </div>
     </header>
   )

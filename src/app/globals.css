@@ -131,10 +131,10 @@ html, body {
 
 /* Navigation */
 .azzle-main-menu-item {
-	background: #FDBE34;
+	background: #c6a764;
 	border-radius: 50px;
 	padding: 10px 16px;
-	box-shadow: 0 8px 32px 0 rgba(253, 190, 52, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(198, 167, 100, 0.2);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	font-size: 13px;
@@ -193,12 +193,12 @@ html, body {
 
 /* Contact Button Styling */
 .contact-cta-btn.azzle-default-btn {
-	background: #FDBE34 !important;
+	background: #c6a764 !important;
 	color: #24293c !important;
 	padding: 14px 28px !important;
 	border-radius: 50px !important;
 	border: none !important;
-	box-shadow: 0 8px 32px 0 rgba(253, 190, 52, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(198, 167, 100, 0.2);
 	transition: all 0.3s ease;
 }
 
@@ -234,7 +234,7 @@ html, body {
 /* Blog Posts Styling */
 .azzle-pricing-wrap {
 	background: white;
-	border: 2px solid rgba(253, 190, 52, 0.3);
+	border: 2px solid rgba(198, 167, 100, 0.3);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 	transition: all 0.3s ease;
 }
@@ -244,9 +244,9 @@ html, body {
 }
 
 .azzle-pricing-wrap:hover {
-	box-shadow: 0 8px 30px rgba(253, 190, 52, 0.3);
+	box-shadow: 0 8px 30px rgba(198, 167, 100, 0.3);
 	transform: translateY(-5px);
-	border-color: rgba(253, 190, 52, 0.5);
+	border-color: rgba(198, 167, 100, 0.5);
 }
 
 .azzle-pricing-header h3 {
@@ -290,13 +290,13 @@ html, body {
 .azzle-hero-section h5,
 .azzle-hero-section h6,
 .azzle-hero-section p {
-		color: #FDBE34 !important;
+		color: #c6a764 !important;
 }
 
 .azzle-hero-section .azzle-hero-content1 > p,
 .azzle-hero-section .azzle-hero-content2 > p,
 .azzle-hero-section .azzle-hero-content3 > p {
-		color: #FDBE34 !important;
+		color: #c6a764 !important;
 }
 
 /* Pill-shaped buttons in hero section */

@@ -1,8 +1,8 @@
 :root {
 	--heading-color: rgba(36, 41, 60, 1);
 	--heading-bg: rgba(36, 41, 60, 1);
-	--accent-color: rgba(253, 190, 52, 1);
-	--accent-bg: rgba(253, 190, 52, 1);
+	--accent-color: rgba(198, 167, 100, 1);
+	--accent-bg: rgba(198, 167, 100, 1);
 	--light-color: rgba(242, 247, 255, 1);
 	--light-color2: rgba(242, 247, 255, 1);
 	--light-color3: rgba(230, 230, 230, 1);
@@ -11,7 +11,7 @@
 	--light-color6: rgba(50, 50, 50, 1);
 	--light-color7: rgba(245, 245, 245, 1);
 	--light-color8: rgba(220, 220, 220, 1);
-	--border-color: rgba(253, 190, 52, 1);
+	--border-color: rgba(198, 167, 100, 1);
 	--variable-color1: rgba(240, 240, 240, 1);
 	--variable-color2: rgba(45, 45, 95, 1);
 	--variable-color3: rgba(50, 50, 50, 1);
