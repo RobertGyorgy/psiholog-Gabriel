@@ -19,18 +19,31 @@
 @import "../../public/assets/css/main.css"; 
 @import "../../public/assets/css/app.min.css";
 
+/* Prevent horizontal scrolling */
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
 /* Header Section */
 .azzle-header-section {
 	position: fixed;
 	top: 20px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: calc(100% - 200px);
+	width: calc(100% - 40px);
 	max-width: 1200px;
 	z-index: 1000;
 	background: transparent;
 	padding: 0;
 	border: none;
+}
+
+@media (min-width: 992px) {
+	.azzle-header-section {
+		width: calc(100% - 200px);
+	}
 }
 
 .azzle-header-section .container {
@@ -328,20 +341,12 @@
 }
 
 @media (max-width: 991px) {
-	body {
-		padding-top: 50px;
-	}
-	
 	.header-logo a img {
 		max-width: 70px !important;
 	}
 }
 
 @media (max-width: 576px) {
-	body {
-		padding-top: 45px;
-	}
-	
 	.header-logo a img {
 		max-width: 60px !important;
 	}
