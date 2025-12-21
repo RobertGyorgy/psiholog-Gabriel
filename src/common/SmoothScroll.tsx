@@ -19,18 +19,28 @@ export default function SmoothScroll() {
           const targetElement = document.getElementById(targetId);
           
           if (targetElement) {
-            // Smooth scroll to the element
-            targetElement.scrollIntoView({
+            // Calculate offset for fixed navbar (approximately 100px)
+            const navbarHeight = 100;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+            
+            // Smooth scroll to the element with offset
+            window.scrollTo({
+              top: offsetPosition,
               behavior: "smooth",
-              block: "start",
             });
             
-            // Refresh AOS animations after scrolling
-            setTimeout(() => {
+            // Force AOS to recalculate and refresh animations multiple times
+            const refreshAOS = () => {
               if (typeof window !== "undefined" && (window as any).AOS) {
-                (window as any).AOS.refresh();
+                (window as any).AOS.refreshHard();
               }
-            }, 800);
+            };
+            
+            // Refresh immediately and after scroll completes
+            setTimeout(refreshAOS, 100);
+            setTimeout(refreshAOS, 500);
+            setTimeout(refreshAOS, 1000);
           }
         }
       }
