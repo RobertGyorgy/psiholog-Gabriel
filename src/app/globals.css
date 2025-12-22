@@ -17,41 +17,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Tailwind CSS Variables for InteractiveHoverButton */
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --primary: 43 100% 60%;
-    --primary-foreground: 210 40% 98%;
-  }
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
+		--primary: 43 100% 60%;
+		--primary-foreground: 210 40% 98%;
+	}
 }
 
 /* Prevent horizontal scrolling */
 html, body {
-	overflow-x: hidden;
+	box-shadow: 0 8px 32px 0 rgba(197, 166, 99, 0.2);
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
 	scroll-padding-top: 120px;
 }
-
 /* Header Section */
 .azzle-header-section {
 	position: fixed;
 	top: 15px;
 	left: 50%;
 	transform: translateX(-50%);
+	box-shadow: 0 8px 30px rgba(197, 166, 99, 0.3);
 	width: calc(100% - 60px);
 	max-width: 350px;
 	z-index: 1000;
 	background: transparent !important;
 	padding: 0 !important;
 	border: none !important;
-	box-shadow: none !important;
+	--gradient-blue-gold: linear-gradient(135deg, rgba(16, 55, 92, 0.3) 0%, rgba(197, 166, 99, 0.25) 100%);
 	backdrop-filter: none !important;
-	-webkit-backdrop-filter: none !important;
+	--gradient-gold-blue: linear-gradient(135deg, rgba(197, 166, 99, 0.35) 0%, rgba(16, 55, 92, 0.3) 100%);
 }
 
 .azzle-header-section.sticky-menu {
@@ -63,18 +62,28 @@ html, body {
 
 .azzle-header-section.hide-header {
 	background: transparent !important;
-	box-shadow: none !important;
+	color: rgba(197, 166, 99, 1) !important;
 	backdrop-filter: none !important;
 	-webkit-backdrop-filter: none !important;
 }
 
 .azzle-header-section.section2,
 .azzle-header-section.section4 {
-	background: transparent !important;
+	color: rgba(197, 166, 99, 1) !important;
 	backdrop-filter: none !important;
 	-webkit-backdrop-filter: none !important;
 	box-shadow: none !important;
-	border: none !important;
+	background: radial-gradient(circle, rgba(197, 166, 99, 0.45) 0%, transparent 70%);
+}
+
+@media (max-width: 991px) {
+	.azzle-header-section .container {
+		display: flex !important;
+		flex-direction: row;
+		gap: 8px !important;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media (max-width: 576px) {
@@ -192,10 +201,10 @@ html, body {
 
 /* Navigation */
 .azzle-main-menu-item {
-	background: #D4AF37;
+	background: rgba(197, 166, 99, 1);
 	border-radius: 50px;
 	padding: 10px 16px;
-	box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(197, 166, 99, 0.2);
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	font-size: 13px;
@@ -254,12 +263,12 @@ html, body {
 
 /* Contact Button Styling */
 .contact-cta-btn.azzle-default-btn {
-	background: #D4AF37 !important;
+	background: rgba(197, 166, 99, 1) !important;
 	color: #24293c !important;
 	padding: 14px 28px !important;
 	border-radius: 50px !important;
 	border: none !important;
-	box-shadow: 0 8px 32px 0 rgba(212, 175, 55, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(197, 166, 99, 0.2);
 	transition: all 0.3s ease;
 }
 
@@ -295,7 +304,7 @@ html, body {
 /* Blog Posts Styling */
 .azzle-pricing-wrap {
 	background: white;
-	border: 2px solid rgba(212, 175, 55, 0.3);
+	border: 2px solid rgba(197, 166, 99, 0.3);
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 	transition: all 0.3s ease;
 }
@@ -305,9 +314,9 @@ html, body {
 }
 
 .azzle-pricing-wrap:hover {
-	box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+	box-shadow: 0 8px 30px rgba(197, 166, 99, 0.3);
 	transform: translateY(-5px);
-	border-color: rgba(212, 175, 55, 0.5);
+	border-color: rgba(197, 166, 99, 0.5);
 }
 
 .azzle-pricing-header h3 {
@@ -322,8 +331,8 @@ html, body {
 
 /* Gradient and background updates */
 :root {
-	--gradient-blue-gold: linear-gradient(135deg, rgba(16, 55, 92, 0.3) 0%, rgba(212, 175, 55, 0.25) 100%);
-	--gradient-gold-blue: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(16, 55, 92, 0.3) 100%);
+	--gradient-blue-gold: linear-gradient(135deg, rgba(16, 55, 92, 0.3) 0%, rgba(197, 166, 99, 0.25) 100%);
+	--gradient-gold-blue: linear-gradient(135deg, rgba(197, 166, 99, 0.35) 0%, rgba(16, 55, 92, 0.3) 100%);
 	--gradient-blue-dark: linear-gradient(180deg, rgba(16, 55, 92, 0.2) 0%, rgba(16, 55, 92, 0.35) 100%);
 }
 
@@ -351,13 +360,13 @@ html, body {
 .azzle-hero-section h5,
 .azzle-hero-section h6,
 .azzle-hero-section p {
-		color: #D4AF37 !important;
+		color: rgba(197, 166, 99, 1) !important;
 }
 
 .azzle-hero-section .azzle-hero-content1 > p,
 .azzle-hero-section .azzle-hero-content2 > p,
 .azzle-hero-section .azzle-hero-content3 > p {
-		color: #D4AF37 !important;
+		color: rgba(197, 166, 99, 1) !important;
 }
 
 /* Pill-shaped buttons in hero section */
@@ -386,7 +395,7 @@ html, body {
 	position: absolute;
 	width: 350px;
 	height: 350px;
-		background: radial-gradient(circle, rgba(212, 175, 55, 0.45) 0%, transparent 70%);
+		background: radial-gradient(circle, rgba(197, 166, 99, 0.45) 0%, transparent 70%);
 	border-radius: 50%;
 	bottom: -100px;
 	left: -100px;
@@ -399,40 +408,40 @@ html, body {
 .azzle-service-item,
 .azzle-pricing-item {
 		background: linear-gradient(135deg, rgba(244, 246, 255, 0.95) 0%, rgba(16, 55, 92, 0.08) 100%);
-		border: 2px solid rgba(212, 175, 55, 0.4) !important;
+		border: 2px solid rgba(197, 166, 99, 0.4) !important;
 }
 
 .azzle-feature-item:hover,
 .azzle-service-item:hover {
-		background: linear-gradient(135deg, rgba(244, 246, 255, 0.99) 0%, rgba(212, 175, 55, 0.15) 100%);
-		border-color: rgba(212, 175, 55, 0.7) !important;
+		background: linear-gradient(135deg, rgba(244, 246, 255, 0.99) 0%, rgba(197, 166, 99, 0.15) 100%);
+		border-color: rgba(197, 166, 99, 0.7) !important;
 		box-shadow: 0 15px 40px rgba(16, 55, 92, 0.2);
 }
 
 /* Gradient accent elements */
 .azzle-default-btn {
-		background: linear-gradient(135deg, rgba(212, 175, 55, 1) 0%, rgba(212, 175, 55, 0.9) 100%) !important;
+		background: linear-gradient(135deg, rgba(197, 166, 99, 1) 0%, rgba(197, 166, 99, 0.9) 100%) !important;
 		color: rgba(16, 55, 92, 1) !important;
 	border: none !important;
 	font-weight: 700 !important;
 	padding: 14px 28px !important;
 	border-radius: 50px !important;
 	transition: all 0.3s ease !important;
-	box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+	box-shadow: 0 4px 15px rgba(197, 166, 99, 0.3);
 }
 
 .azzle-default-btn:hover {
-		background: linear-gradient(135deg, rgba(212, 175, 55, 1) 0%, rgba(212, 175, 55, 0.9) 100%) !important;
+		background: linear-gradient(135deg, rgba(197, 166, 99, 1) 0%, rgba(197, 166, 99, 0.9) 100%) !important;
 		color: rgba(16, 55, 92, 1) !important;
-		box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+		box-shadow: 0 8px 25px rgba(197, 166, 99, 0.5);
 	transform: translateY(-2px);
 }
 
 .azzle-default-btn.outline-btn,
 .azzle-default-btn.outline-btn3 {
 	background: transparent !important;
-		color: rgba(212, 175, 55, 1) !important;
-		border: 2px solid rgba(212, 175, 55, 1) !important;
+		color: rgba(197, 166, 99, 1) !important;
+		border: 2px solid rgba(197, 166, 99, 1) !important;
 	border-radius: 50px !important;
 }
 
@@ -458,20 +467,20 @@ html, body {
 
 .azzle-default-btn.outline-btn:hover,
 .azzle-default-btn.outline-btn3:hover {
-		background: rgba(212, 175, 55, 1) !important;
+		background: rgba(197, 166, 99, 1) !important;
 		color: rgba(16, 55, 92, 1) !important;
-		box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+		box-shadow: 0 8px 25px rgba(197, 166, 99, 0.4);
 	transform: translateY(-2px);
 }
 
 .azzle-default-btn.btn2 {
-		background: linear-gradient(135deg, rgba(212, 175, 55, 1) 0%, rgba(212, 175, 55, 0.9) 100%) !important;
+		background: linear-gradient(135deg, rgba(197, 166, 99, 1) 0%, rgba(197, 166, 99, 0.9) 100%) !important;
 		color: rgba(16, 55, 92, 1) !important;
 }
 
 .azzle-default-btn.btn2:hover {
-		background: linear-gradient(135deg, rgba(212, 175, 55, 1) 0%, rgba(212, 175, 55, 0.9) 100%) !important;
-		box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+		background: linear-gradient(135deg, rgba(197, 166, 99, 1) 0%, rgba(197, 166, 99, 0.9) 100%) !important;
+		box-shadow: 0 8px 25px rgba(197, 166, 99, 0.5);
 	transform: translateY(-2px);
 }
 
@@ -539,7 +548,7 @@ html, body {
 }
 
 .azzle-section-padding.pt-0 h2 {
-		color: #D4AF37 !important;
+		color: rgba(197, 166, 99, 1) !important;
 }
 
 .azzle-section-padding.pt-0 p {
@@ -550,9 +559,9 @@ html, body {
 	color: #fff !important;
 }
 
-/* Updated arrow SVG colors in the list */
+/* Arrow SVG colors - no filter needed, use proper fill color in SVG */
 .azzle-section-padding.pt-0 .azzle-listicon-wrap img {
-	filter: brightness(0) saturate(100%) invert(78%) sepia(57%) saturate(1054%) hue-rotate(347deg) brightness(102%) contrast(98%);
+	/* Filter removed - SVGs now use correct fill color */
 }
 
 /* Modal animations */

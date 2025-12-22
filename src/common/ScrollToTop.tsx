@@ -64,7 +64,7 @@ const ScrollToTop = () => {
           >
             <path
               d="M14.4847 1C14.4847 1 14.875 5.5 18.9847 7.9C20.8665 8.99899 23.4847 10 23.4847 10M23.4847 10H1M23.4847 10C23.4847 10 20.9004 11.0612 18.9847 12.1C14.4847 14.54 14.4847 19 14.4847 19"
-              stroke="rgba(212, 175, 55)"
+              stroke="rgba(197, 166, 99, 1)"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"

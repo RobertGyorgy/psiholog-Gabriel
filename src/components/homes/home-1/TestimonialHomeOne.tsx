@@ -13,7 +13,7 @@ export default function TestimonialHomeOne() {
         </div>
         <div className="row">
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="200" style={{ backgroundColor: "rgba(212, 175, 55, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(212, 175, 55, 0.2)" }}>
+            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="200" style={{ backgroundColor: "rgba(197, 166, 99, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(197, 166, 99, 0.2)" }}>
               <div className="azzle-iconbox-rating" style={{ color: "var(--accent-color)", fontSize: "18px", marginBottom: "15px", letterSpacing: "2px" }}>
                 {renderStars(5)}
               </div>
@@ -29,7 +29,7 @@ export default function TestimonialHomeOne() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="400" style={{ backgroundColor: "rgba(212, 175, 55, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(212, 175, 55, 0.2)" }}>
+            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="400" style={{ backgroundColor: "rgba(197, 166, 99, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(197, 166, 99, 0.2)" }}>
               <div className="azzle-iconbox-rating" style={{ color: "var(--accent-color)", fontSize: "18px", marginBottom: "15px", letterSpacing: "2px" }}>
                 {renderStars(5)}
               </div>
@@ -45,7 +45,7 @@ export default function TestimonialHomeOne() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="600" style={{ backgroundColor: "rgba(212, 175, 55, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(212, 175, 55, 0.2)" }}>
+            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="600" style={{ backgroundColor: "rgba(197, 166, 99, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(197, 166, 99, 0.2)" }}>
               <div className="azzle-iconbox-rating" style={{ color: "var(--accent-color)", fontSize: "18px", marginBottom: "15px", letterSpacing: "2px" }}>
                 {renderStars(5)}
               </div>
@@ -61,7 +61,7 @@ export default function TestimonialHomeOne() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="200" style={{ backgroundColor: "rgba(212, 175, 55, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(212, 175, 55, 0.2)" }}>
+            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="200" style={{ backgroundColor: "rgba(197, 166, 99, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(197, 166, 99, 0.2)" }}>
               <div className="azzle-iconbox-rating" style={{ color: "var(--accent-color)", fontSize: "18px", marginBottom: "15px", letterSpacing: "2px" }}>
                 {renderStars(5)}
               </div>
@@ -77,7 +77,7 @@ export default function TestimonialHomeOne() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="400" style={{ backgroundColor: "rgba(212, 175, 55, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(212, 175, 55, 0.2)" }}>
+            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="400" style={{ backgroundColor: "rgba(197, 166, 99, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(197, 166, 99, 0.2)" }}>
               <div className="azzle-iconbox-rating" style={{ color: "var(--accent-color)", fontSize: "18px", marginBottom: "15px", letterSpacing: "2px" }}>
                 {renderStars(5)}
               </div>
@@ -93,7 +93,7 @@ export default function TestimonialHomeOne() {
             </div>
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6">
-            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="600" style={{ backgroundColor: "rgba(212, 175, 55, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(212, 175, 55, 0.2)" }}>
+            <div className="azzle-iconbox-wrap2" data-aos="fade-up" data-aos-delay="600" style={{ backgroundColor: "rgba(197, 166, 99, 0.1)", padding: "30px", borderRadius: "12px", border: "1px solid rgba(197, 166, 99, 0.2)" }}>
               <div className="azzle-iconbox-rating" style={{ color: "var(--accent-color)", fontSize: "18px", marginBottom: "15px", letterSpacing: "2px" }}>
                 {renderStars(5)}
               </div>

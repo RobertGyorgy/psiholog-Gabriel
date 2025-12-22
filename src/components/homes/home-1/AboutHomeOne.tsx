@@ -35,15 +35,15 @@ export default function AboutHomeOne() {
                 <div className="azzle-listicon-wrap mt-50">
                   <ul>
                     <li>
-                      <img src="assets/images/home1/arrow.svg" alt="Icon" />
+                      <img src="/assets/images/home1/arrow-gold.svg" alt="Icon" />
                       <h3>Ready-to-use AI capabilities system</h3>
                     </li>
                     <li>
-                      <img src="assets/images/home1/arrow.svg" alt="Icon" />
+                      <img src="/assets/images/home1/arrow-gold.svg" alt="Icon" />
                       <h3>Users can quickly integrate AI features</h3>
                     </li>
                     <li>
-                      <img src="assets/images/home1/arrow.svg" alt="Icon" />
+                      <img src="/assets/images/home1/arrow-gold.svg" alt="Icon" />
                       <h3>Time savings translate to cost savings</h3>
                     </li>
                   </ul>

@@ -39,7 +39,7 @@ const InteractiveHoverButton = React.forwardRef<
         }
         
         .interactive-hover-button:hover.hover-gold-border {
-          border: 2px solid #D4AF37;
+          border: 2px solid rgba(197, 166, 99, 1);
         }
         
         .button-text {
@@ -98,7 +98,7 @@ const InteractiveHoverButton = React.forwardRef<
         
         /* Yellow variant for Learn More button */
         .interactive-hover-button.yellow-hover .button-background {
-          background-color: #D4AF37;
+          background-color: rgba(197, 166, 99, 1);
         }
       `}</style>
     </button>
