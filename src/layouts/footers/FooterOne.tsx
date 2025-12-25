@@ -1,126 +1,45 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-
-// ✅ CTA slider items (data-driven)
-const ctaItems = [
-  "Start building software",
-  "Boost your productivity",
-  "Grow your business",
-  "Innovate with AI",
-  "Deliver faster",
-  "Stay ahead of trends",
-];
 
 export default function FooterOne() {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    // Clone content for infinite scroll effect
-    const clone = container.innerHTML;
-    container.innerHTML += clone;
-
-    let scrollAmount = 0;
-    let frameId: number;
-
-    const marqueeScroll = () => {
-      if (container) {
-        scrollAmount += 2; // speed
-        container.style.transform = `translateX(-${scrollAmount}px)`;
-
-        if (scrollAmount >= container.scrollWidth / 2) {
-          scrollAmount = 0;
-        }
-      }
-      frameId = requestAnimationFrame(marqueeScroll);
-    };
-
-    frameId = requestAnimationFrame(marqueeScroll);
-    return () => cancelAnimationFrame(frameId);
-  }, []);
-
   return (
     <footer id="contact" className="azzle-footer-section">
-      {/* CTA Slider */}
-      <div className="azzle-footer-top inner-mwrquee-wra overflow-hidden">
-        <div
-          className="azzle-cta-slider-init flex"
-          ref={containerRef}
-          style={{
-            display: "inline-flex",
-            whiteSpace: "nowrap",
-            willChange: "transform",
-          }}
-        >
-          {ctaItems.map((title, i) => (
-            <div key={i} className="azzle-cta-slider-item flex items-center px-6">
-              <img src="assets/images/home1/star.svg" alt="Icon" />
-              <div className="azzle-cta-slider-title">{title}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Footer content */}
       <div className="container">
         <div className="azzle-footer-one">
-          <div className="row">
-            
-            <div className="col-xl-4 col-lg-12 col-md-12">
+          <div className="row align-items-start justify-content-between">
+            <div className="col-lg-6 col-md-12">
               <div className="azzle-footer-textarea">
                 <Link href="/">
-                  <img src="assets/images/logo/logo-dark.svg" alt="Logo" />
+                  <span
+                    style={{
+                      display: "inline-block",
+                      fontSize: "36px",
+                      fontWeight: 700,
+                      color: "#24293c",
+                      letterSpacing: "0.5px",
+                    }}
+                  >
+                    Gabriel Anthoni
+                  </span>
                 </Link>
                 <p>
-                  Our mission is to harness the power of AI to solve complex
-                  business challenges, empower decision-makers with data-driven
-                  insights, and enhance user experiences across digital
-                  platforms.
+                  Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj. Cabinet privat. Ședințe individuale. Confidențialitate.
                 </p>
-                <a href="mailto:example@gmail.com">
-                  <span>Website:</span> www.example@gmail.com
+                <a href="tel:+40728561826">
+                  <span>Număr de telefon:</span> +40 728 561 826
                 </a>
               </div>
             </div>
 
-            <div className="col-xl-2 col-lg-4 col-md-4">
-              <div className="azzle-footer-menu pl-30">
-                <h4>Primary Pages</h4>
+            <div className="col-lg-3 col-md-6">
+              <div className="azzle-footer-menu">
+                <h4>Linkuri rapide</h4>
                 <ul>
-                  <li><Link href="/">Home</Link></li>
-                  <li><Link href="/about-us">About Us</Link></li>
-                  <li><Link href="/service">Services</Link></li>
-                  <li><Link href="/pricing">Pricing</Link></li>
+                  <li><Link href="#services">Servicii</Link></li>
+                  <li><Link href="#faq">Întrebări frecvente</Link></li>
                   <li><Link href="#contact">Contact</Link></li>
                 </ul>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-4">
-              <div className="azzle-footer-menu pl-70">
-                <h4>Utility Pages</h4>
-                <ul>
-                  <li><Link href="#faq">Faq</Link></li>
-                  <li><Link href="/sign-up">Sign Up</Link></li>
-                  <li><Link href="/sign-in">Sign In</Link></li>
-                  <li><Link href="/reset-password">Reset Password</Link></li>
-                  <li><Link href="/errors-404">404 Not found</Link></li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-4">
-              <div className="azzle-footer-menu mb-0">
-                <h4>Subscribe our newsletter</h4>
-                <div className="azzle-subscribe-field">
-                  <input type="email" placeholder="Enter your email" />
-                  <button className="sub-btn" type="submit">
-                    <img src="assets/images/home1/arrow-white.svg" alt="Icon" />
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -129,10 +48,13 @@ export default function FooterOne() {
         {/* Bottom */}
         <div className="azzle-footer-bottom-text">
           <p>
-            © Copyright {new Date().getFullYear()}, All Rights Reserved by
-            favdevs
+            © Copyright {new Date().getFullYear()}, Gabriel Anthoni. Made by {" "}
+            <a href="https://www.achieve.ro/" target="_blank" rel="noreferrer">
+              achieve.ro
+            </a>
           </p>
         </div>
+         
       </div>
     </footer>
   );

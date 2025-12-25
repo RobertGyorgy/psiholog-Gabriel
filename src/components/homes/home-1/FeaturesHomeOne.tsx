@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 
 interface FeatureDetails {
   title: string;
@@ -11,52 +12,85 @@ interface FeatureDetails {
 export default function FeaturesHomeOne() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedFeature, setSelectedFeature] = useState<FeatureDetails | null>(null);
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const features: FeatureDetails[] = [
     {
-      title: "Resource Flexibility",
-      shortDesc: "AI SaaS solutions designed be scalable, allowing users to adjust their needs.",
-      fullDesc: "Our AI SaaS solutions are built with scalability at their core, enabling businesses to seamlessly adjust resources based on their evolving needs. Whether you're a startup experiencing rapid growth or an enterprise managing fluctuating demands, our platform automatically scales to match your requirements. This flexibility ensures optimal performance while keeping costs under control, as you only pay for what you use. The infrastructure adapts in real-time, providing the computational power needed for complex AI tasks without requiring manual intervention or long-term commitments.",
+      title: "Terpaie individuala",
+      shortDesc: "Spatiu sigur pentru a explora ce te preocupa, in ritmul tau.",
+      fullDesc: "Anxietate, atacuri de panică, fobii\n Teama devine filtrul prin care privești lumea, limitându-ți alegerile și transformând viața într-un exercițiu constant de evitare.\n\nDepresie\nTotul pare greu, gol și lipsit de sens – te simți deconectat de tine însuți și incapabil să mai simți bucurie.\n\nStimă de sine scăzută\nTe judeci mai dur decât ai face-o cu oricine altcineva și crezi că nu ești suficient de bun, indiferent de ceea ce realizezi.\n\nTulburări de somn și alimentație\nCorpul tău nu mai găsește echilibrul – fie că este vorba de nopți albe, coșmaruri sau o relație haotică cu mâncarea.\n\nDependențe\nCeea ce părea o soluție temporară devine acum centrul vieții tale, controlându-ți alegerile și relațiile.\n\nTraume\nTrecutul refuză să rămână în trecut și continuă să îți invadeze prezentul prin amintiri, tensiune constantă sau evitare.\n\nDoliu\nLumea s-a oprit pentru tine, dar continuă pentru ceilalți – iar tu te simți pierdut într-o durere pe care nimeni nu o mai înțelege pe deplin.\n\nStres profesional\nMunca îți consumă energia, sănătatea și bucuria, transformând ceea ce ar trebui să fie o parte a vieții într-o povară care acoperă totul.\n\nDificultăți de comunicare sau luare a deciziilor\nTe simți blocat între nevoia de a te exprima și teama de conflict, sau între dorința de a avansa și frica de a greși.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-          <path fillRule="evenodd" clipRule="evenodd" d="M35 8.70058L23.3333 0V23.3333H0L8.70058 35L1.01993e-06 46.6665H23.3333V23.3333H36.6665V0L35 8.70058ZM61.2994 35L70 23.3334H36.6665V46.6665H23.3333V70L35 61.2994L46.6665 70V46.6665H70L61.2994 35Z" fill="#24293c" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="35" cy="20" r="10" stroke="#24293c" strokeWidth="3" />
+          <path d="M18 60c1-10 8-18 17-18s16 8 17 18" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
+          <path d="M27 33c-6 2-12 7-14 15" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+      )
+    },
+{
+  title: "Terapie pentru relații de cuplu",
+  shortDesc: "Regasiti conexiunea si comunicarea cand distanta a inlocuit apropierea",
+  fullDesc: "Când distanța dintre voi pare mai mare ca niciodată sau când conversațiile se transformă în conflicte, terapia de cuplu vă oferă șansa de a reconstrui ceea ce s-a erodat în timp.\nFiecare relație are povestea ei unică, cu momente de apropiere și perioade de criză. Aici veți găsi un spațiu sigur în care ambele perspective contează și în care puteți explora sincer ce v-a îndepărtat. Vom identifica tiparele care alimentează conflictele, nevoile care rămân neexprimate și modalitățile prin care puteți comunica autentic.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
+          <path d="M25 24a8 8 0 1 1 16 0c0 7-8 11-8 11s-8-4-8-11Z" stroke="#24293c" strokeWidth="3" fill="none" />
+          <path d="M37 26c0-5 4-9 9-9s9 4 9 9c0 8-9 12-9 12" stroke="#24293c" strokeWidth="3" fill="none" strokeLinecap="round" />
+          <path d="M20 46c3-4 8-6 15-6s12 2 15 6" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     },
     {
-      title: "Managed Services",
-      shortDesc: "Providers typically hale the maintenance so patching of the infrastructure.",
-      fullDesc: "Our managed services take the burden of infrastructure maintenance off your shoulders. We handle all aspects of system updates, security patching, performance monitoring, and optimization so you can focus on your core business objectives. Our team of experts works around the clock to ensure your AI services run smoothly, with proactive maintenance that prevents issues before they impact your operations. This includes automatic security updates, database optimization, backup management, and continuous monitoring for potential vulnerabilities. With our managed services, you benefit from enterprise-level infrastructure management without the need for a dedicated IT team.",
+      title: "Terapie in Grup",
+      shortDesc: "Vindecare prin descoperirea ca nu ești singur",
+      fullDesc: "Terapia de grup îți oferă ceva ce terapia individuală nu-ți poate oferi – experiența că nu ești singur în ceea ce trăiești. Într-un mediu sigur și confidențial, vei descoperi că alții se confruntă cu provocări similare, iar această recunoaștere reciprocă devine în sine vindecătoare. Vei învăța din experiențele celorlalți, vei primi perspective diferite și vei construi abilități de comunicare și empatie într-un context real, de susținere reciprocă.\nGrupul funcționează ca un microcosmos al lumii reale, unde poți exersa noi comportamente, poți primi feedback onest și poți experimenta sentimentul de apartenență. Este un spațiu în care vulnerabilitatea este respectată, progresul celorlalți te inspiră, iar fiecare persoană contribuie la vindecarea tuturor. Terapia de grup este eficientă pentru anxietate, depresie, dificultăți relaționale, dezvoltare personală și multe alte provocări – iar puterea colectivului amplifică procesul terapeutic individual.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-          <path fillRule="evenodd" clipRule="evenodd" d="M0 55.4417C16.155 50.3359 19.6652 53.8457 14.5591 70C23.9937 53.8457 46.0065 53.8457 55.441 70C50.3384 53.8457 53.8489 50.3359 70 55.4417C53.8489 46.0075 53.8489 23.9961 70 14.5621C53.8489 19.6641 50.3384 16.1541 55.441 0C46.0065 16.1541 23.9937 16.1541 14.5591 0C19.6652 16.1541 16.155 19.6641 0 14.5621C16.155 23.9961 16.155 46.0075 0 55.4417ZM35 47.95C42.1522 47.95 47.95 42.1522 47.95 35C47.95 27.8479 42.1522 22.05 35 22.05C27.8479 22.05 22.05 27.8479 22.05 35C22.05 42.1522 27.8479 47.95 35 47.95Z" fill="#24293c" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
+          <circle cx="22" cy="24" r="7" stroke="#24293c" strokeWidth="3" />
+          <circle cx="48" cy="24" r="7" stroke="#24293c" strokeWidth="3" />
+          <circle cx="35" cy="42" r="8" stroke="#24293c" strokeWidth="3" />
+          <path d="M9 46c2-7 8-11 13-11" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
+          <path d="M61 46c-2-7-8-11-13-11" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
+          <path d="M18 54c3-5 9-8 17-8s14 3 17 8" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     },
     {
-      title: "Web-Based Access",
-      shortDesc: "Web browsers or making easy to use anywhere with an internet connection.",
-      fullDesc: "Access your AI capabilities from anywhere with our web-based platform. No complex installations or specialized hardware required - simply open your web browser and start leveraging powerful AI tools instantly. Our platform is fully responsive and optimized for all devices, from desktops to tablets and smartphones, ensuring a consistent experience across all platforms. Work from the office, home, or on the go with the same seamless interface. The web-based architecture also means automatic updates and new features are deployed instantly to all users without any downloads or installation procedures. Your work is automatically synced across all your devices, providing true mobility and flexibility.",
+      title: "Evolutie personala și conștientizare de sine",
+      shortDesc: "Cunoaștere profundă de sine și direcție autentică",
+      fullDesc: "Acest tip de terapie te invită într-o călătorie profundă de cartografiere a sinelui, unde explorezi cine ești cu adevărat, dincolo de rolurile și așteptările celorlalți. Împreună, vom descoperi resursele tale interioare, vom clarifica valorile care te ghidează și vom construi o viziune autentică asupra vieții tale.\Prin conștientizare și reflecție, vei învăța să îți înțelegi mai bine tiparele de gândire și comportament, să iei decizii aliniate cu adevărata ta natură și să devii arhitectul propriei tale evoluții.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-          <g clipPath="url(#clip0_1_4318)">
-            <path d="M54.6224 50.3776L39.2444 35L54.6224 19.6223L70 35L54.6224 50.3776ZM15.3777 50.3776L0 35L15.3777 19.6223L30.7555 35L15.3777 50.3776ZM35 70L19.6223 54.6224L35 39.2444L50.3776 54.6224L35 70ZM35 30.7555L19.6223 15.3777L35 0L50.3776 15.3777L35 30.7555Z" fill="#24293c" />
-          </g>
-          <defs>
-            <clipPath id="clip0_1_4318">
-              <rect width="70" height="70" fill="white" />
-            </clipPath>
-          </defs>
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
+          <path d="M35 8c7 0 12 5 12 12 0 10-12 18-12 18S23 30 23 20c0-7 5-12 12-12Z" stroke="#24293c" strokeWidth="3" fill="none" />
+          <circle cx="35" cy="20" r="4" stroke="#24293c" strokeWidth="3" fill="none" />
+          <path d="M20 48c4-5 9-8 15-8s11 3 15 8" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     },
     {
-      title: "Friendly Interfaces",
-      shortDesc: "user-friendly interfaces and dashboards, making it easier for non-technical users.",
-      fullDesc: "Our intuitive interfaces are designed with all users in mind, from AI experts to those with no technical background. Navigate complex AI operations through clean, well-organized dashboards that present information clearly and actionably. Visual workflows, drag-and-drop functionality, and guided wizards make even advanced AI tasks accessible to everyone on your team. We've eliminated technical jargon where possible and provide contextual help throughout the platform. Real-time visualizations help you understand your data and AI model performance at a glance. Customizable dashboards let you focus on the metrics that matter most to your business, while powerful features remain just a click away when you need them.",
+      title: "Coaching si Performance coaching",
+      shortDesc: "Structura pentru a transforma intențiile în rezultate",
+      fullDesc: "Când știi că poți mai mult, dar ceva te ține pe loc. Când visurile tale rămân doar planuri neîmplinite sau când simți că nu evoluezi în direcția dorită – coachingul îți oferă structura, claritatea și susținerea de care ai nevoie pentru a trece la acțiune.\nSpre deosebire de terapie, coachingul nu se concentrează pe vindecarea trecutului, ci pe construirea viitorului pe care ți-l dorești. Împreună, vom clarifica obiectivele tale, vom identifica obstacolele care te blochează și vom crea un plan concret de acțiune. Vei învăța să îți gestionezi timpul și energia eficient, să depășești procrastinarea și să transformi intențiile în rezultate măsurabile.\nPerformance coaching-ul se adresează celor care doresc să exceleze – în carieră, în sport, în proiecte personale sau în orice domeniu care contează pentru tine. Vei descoperi cum să îți maximizezi resursele, să îți construiești disciplina și să devii cea mai productivă și împlinită versiune a ta. Succesul nu este un accident – este rezultatul unor alegeri conștiente și constante.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
-          <path fillRule="evenodd" clipRule="evenodd" d="M20.5299 51.7242C20.0703 50.7306 19.2695 49.9298 18.2757 49.4699C10.5407 45.8923 4.42168 40.733 1.15547 37.639C-0.385161 36.1796 -0.385154 33.8204 1.15547 32.3609C4.42168 29.2668 10.5407 24.1076 18.2757 20.53C19.2695 20.0703 20.0703 19.2695 20.5299 18.2757C24.1076 10.5407 29.2668 4.42168 32.3609 1.15547C33.8204 -0.385159 36.1796 -0.385155 37.639 1.15547C40.733 4.42168 45.8923 10.5407 49.4699 18.2757C49.9298 19.2695 50.7306 20.0703 51.7242 20.5299C59.4594 24.1076 65.5784 29.2668 68.8445 32.3609C70.3852 33.8204 70.3852 36.1796 68.8445 37.639C65.5784 40.733 59.4594 45.8923 51.7242 49.4699C50.7306 49.9298 49.9298 50.7306 49.4699 51.7242C45.8923 59.4594 40.733 65.5784 37.639 68.8445C36.1796 70.3852 33.8204 70.3852 32.3609 68.8445C29.2668 65.5784 24.1076 59.4594 20.5299 51.7242ZM35.0001 47.8655C42.1053 47.8655 47.8655 42.1053 47.8655 35.0001C47.8655 27.8946 42.1053 22.1345 35.0001 22.1345C27.8946 22.1345 22.1346 27.8946 22.1346 35.0001C22.1346 42.1053 27.8946 47.8655 35.0001 47.8655Z" fill="#24293c" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
+          <path d="M10 48l13-16 10 12 12-18 15 20" stroke="#24293c" strokeWidth="3" fill="none" strokeLinecap="round" />
+          <circle cx="16" cy="22" r="4" stroke="#24293c" strokeWidth="3" fill="none" />
+          <path d="M8 58h54" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
+        </svg>
+      )
+    },
+    {
+      title: "Terapie online",
+      shortDesc: "Aceeasi calitate terapeutica, din confortul spatiului tau.",
+      fullDesc: "Terapia online îți oferă aceeași calitate și profunzime ca terapia tradițională, dar cu flexibilitatea de a accesa suportul psihologic din confortul si siguranta spațiului tău, oriunde te-ai afla. Mulți clienți descoperă ca terapia online le permite sa fie mai relaxați și mai deschisi, eliminand anxietatea deplasării. Este o soluție practică și eficientă pentru cei care doresc continuitate în terapie, indiferent de locație sau circumstanțe.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
+          <rect x="10" y="15" width="50" height="32" rx="4" stroke="#24293c" strokeWidth="3" />
+          <path d="M28 51h14" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
+          <path d="M22 57h26" stroke="#24293c" strokeWidth="3" strokeLinecap="round" />
         </svg>
       )
     }
@@ -76,13 +110,13 @@ export default function FeaturesHomeOne() {
     <section id="features" className="azzle-section-padding">
       <div className="container">
         <div className="azzle-section-title max-width-780" data-aos="fade-left" data-aos-delay="500">
-          <h2>Core features that make it valuable</h2>
+          <h2>Tipuri de terapie</h2>
         </div>
         <div className="azzle-iconbox-wrapper" data-aos="fade-up" data-aos-delay="700">
           <div className="azzle-iconbox-column">
             {features.map((feature, index) => (
-              <div key={index} className={`azzle-iconbox-wrap ${index === 3 ? 'wrap2' : ''}`}>
-                <div className="azzle-iconbox-icon">
+              <div key={index} className={`azzle-iconbox-wrap`}>
+                <div className="azzle-iconbox-icon feature-icon">
                   {feature.icon}
                 </div>
                 <div className="azzle-iconbox-content">
@@ -91,6 +125,7 @@ export default function FeaturesHomeOne() {
                 </div>
                 <div className="azzle-iconbox-button mt-50">
                   <button 
+                    type="button"
                     onClick={() => openModal(feature)} 
                     className="azzle-default-btn"
                     style={{ 
@@ -102,7 +137,8 @@ export default function FeaturesHomeOne() {
                       color: '#24293c',
                       fontSize: '16px',
                       fontWeight: '600',
-                      transition: 'all 0.3s ease'
+                      transition: 'all 0.3s ease',
+                      pointerEvents: 'auto'
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.background = '#24293c';
@@ -124,7 +160,8 @@ export default function FeaturesHomeOne() {
     </section>
 
     {/* Modal */}
-    {isModalOpen && selectedFeature && (
+    {mounted && isModalOpen && selectedFeature && createPortal(
+      (
       <div 
         style={{
           position: 'fixed',
@@ -138,7 +175,8 @@ export default function FeaturesHomeOne() {
           justifyContent: 'center',
           zIndex: 9999,
           padding: '20px',
-          animation: 'fadeIn 0.3s ease-out'
+          animation: 'fadeIn 0.3s ease-out',
+          backdropFilter: 'blur(4px)'
         }}
         onClick={closeModal}
       >
@@ -158,6 +196,7 @@ export default function FeaturesHomeOne() {
         >
           {/* Close button */}
           <button
+            type="button"
             onClick={closeModal}
             style={{
               position: 'absolute',
@@ -196,14 +235,30 @@ export default function FeaturesHomeOne() {
               fontSize: '16px', 
               lineHeight: '1.8', 
               color: '#333',
-              marginBottom: '0'
+              marginBottom: '0',
+              whiteSpace: 'pre-wrap'
             }}>
               {selectedFeature.fullDesc}
             </p>
           </div>
         </div>
       </div>
+      ),
+      document.body
     )}
+    <style jsx>{`
+      .feature-icon svg,
+      .feature-icon svg * {
+        fill: none !important;
+        stroke: #24293c !important;
+        transition: stroke 0.2s ease;
+      }
+      .azzle-iconbox-wrap:hover .feature-icon svg,
+      .azzle-iconbox-wrap:hover .feature-icon svg * {
+        fill: none !important;
+        stroke: rgba(197, 166, 99, 1) !important;
+      }
+    `}</style>
     </>
   )
 }

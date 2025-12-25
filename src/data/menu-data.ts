@@ -15,10 +15,10 @@ interface MenuItem {
 
 const menu_data: MenuItem[] = [
   { title: "Home", has_submenu: false, path: "/" },
-  { title: "About", has_submenu: false, path: "#about" },
-  { title: "Features", has_submenu: false, path: "#features" },
+  { title: "Despre", has_submenu: false, path: "#about" },
+  { title: "Servicii", has_submenu: false, path: "#features" },
   { title: "Blog", has_submenu: false, path: "#portfolio" },
-  { title: "FAQ", has_submenu: false, path: "#faq" },
+  { title: "Intrebari freccvente", has_submenu: false, path: "#faq" },
   { title: "Contact", has_submenu: false, path: "#contact" },
 ];
 

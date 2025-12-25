@@ -19,7 +19,18 @@ export default function HeaderTwo() {
             <div className="col-8 col-sm-auto ">
               <div className="header-logo">
                 <Link href="/">
-                  <img src="/assets/images/logo-white.svg" alt="logo" />
+                  <span
+                    style={{
+                      color: "#ffffff",
+                      fontWeight: 700,
+                      fontSize: "20px",
+                      letterSpacing: "0.5px",
+                      textTransform: "uppercase",
+                      display: "inline-block",
+                    }}
+                  >
+                    Gabriel Anthoni
+                  </span>
                 </Link>
               </div>
             </div>

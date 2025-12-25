@@ -33,18 +33,20 @@ export default function HeroHomeOne() {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div className="azzle-hero-content1">
-              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "64px", paddingBottom: "20px" }}>Simplify your SaaS solution with AI</h1>
-              <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "18px" }}>Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand for products and services and optimize inventory management and supply chain operations.</p>
+              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "64px", paddingBottom: "20px" }}>Cabinet - Psiholog Gabriel Anthoni</h1>
+              <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "18px" }}>Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj
+Cabinet privat. Ședințe individuale. Confidențialitate 
+</p>
               <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <InteractiveHoverButton 
-                  text="Get Started" 
+                  text="Despre mine" 
                   onClick={() => window.location.href = '#contact'}
                   className="w-44 !bg-[rgba(197,166,99,1)] !text-[rgba(36,41,60)] !border-[rgba(197,166,99,1)] !border-2"
                   style={{ minHeight: '48px' }}
                 />
                 <InteractiveHoverButton 
-                  text="Learn More" 
-                  onClick={() => window.location.href = '#contact'}
+                  text="Servicii" 
+                  onClick={() => window.location.href = '#features'}
                   className="w-44 yellow-hover !bg-white !text-[rgba(197,166,99,1)] !border-[rgba(197,166,99,1)] !border-2"
                   style={{ minHeight: '48px' }}
                 />
@@ -57,30 +59,7 @@ export default function HeroHomeOne() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="divider"></div>
-        <div className="azzle-brand-slider-wraper">
-          <div className="azzle-brand-slider-title" data-aos="fade-up" data-aos-delay=".9s">
-            <p>Companies of all sizes trust us to find AI SaaS critical to their growth and innovation</p>
-          </div>
-          <Slider {...settings} className="azzle-brand-slider">
-            <div className="azzle-logo-icon-item">
-              <img src="assets/images/home1/icon1.svg" alt="Icon" />
-            </div>
-            <div className="azzle-logo-icon-item">
-              <img src="assets/images/home1/icon2.svg" alt="Icon" />
-            </div>
-            <div className="azzle-logo-icon-item">
-              <img src="assets/images/home1/icon3.svg" alt="Icon" />
-            </div>
-            <div className="azzle-logo-icon-item">
-              <img src="assets/images/home1/icon4.svg" alt="Icon" />
-            </div>
-            <div className="azzle-logo-icon-item">
-              <img src="assets/images/home1/icon5.svg" alt="Icon" />
-            </div>
-          </Slider>
-        </div>
+        </div>      
       </div>
     </div>
   )

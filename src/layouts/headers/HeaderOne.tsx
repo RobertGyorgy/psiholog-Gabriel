@@ -11,7 +11,7 @@ export default function HeaderOne() {
         className="container"
         style={{
           display: "grid",
-          gridTemplateColumns: "minmax(0, 1fr) auto minmax(0, 1fr)",
+          gridTemplateColumns: "auto 1fr auto",
           gap: "12px",
           alignItems: "center",
           justifyItems: "center",
@@ -33,7 +33,19 @@ export default function HeaderOne() {
         >
           <div className="header-logo">
             <Link href="/">
-              <img src="/assets/images/logo-1-dark.svg" alt="logo" />   
+              <span
+                style={{
+                  color: "#24293c",
+                  fontWeight: 700,
+                  fontSize: "20px",
+                  letterSpacing: "0.5px",
+                  textTransform: "uppercase",
+                  display: "inline-block",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                Gabriel Anthoni
+              </span>
             </Link>
           </div>
         </div>
@@ -64,6 +76,7 @@ export default function HeaderOne() {
             color: "rgba(36, 41, 60)",
             fontWeight: 600,
             justifySelf: "start",
+            whiteSpace: "nowrap",
           }}
         >
           Contact

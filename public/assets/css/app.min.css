@@ -2625,11 +2625,11 @@ header.hide-header {
 }
 .azzle-iconbox-column {
 	display: grid;
-	gap: 2px;
+	gap: 1px;
 	overflow: hidden;
 	border-radius: 10px;
 	border: 2px solid var(--heading-color);
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 1199px) {
 	.azzle-iconbox-column {

@@ -589,3 +589,17 @@ html, body {
 	display: block !important;
 	overflow: hidden !important;
 }
+
+/* Therapy icons: keep outlines, turn gold on hover */
+.azzle-iconbox-wrap .feature-icon svg,
+.azzle-iconbox-wrap .feature-icon svg * {
+	fill: none !important;
+	stroke: #24293c !important;
+	transition: stroke 0.2s ease;
+}
+
+.azzle-iconbox-wrap:hover .feature-icon svg,
+.azzle-iconbox-wrap:hover .feature-icon svg * {
+	fill: none !important;
+	stroke: rgba(197, 166, 99, 1) !important;
+}

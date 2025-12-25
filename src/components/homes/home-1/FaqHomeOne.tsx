@@ -14,21 +14,33 @@ interface FaqItem {
 const faq_data: FaqItem[] = [
   {
     id: 1,
-    question: "How do I start AI SaaS?",
+    question: "Când este recomandat să merg la psiholog?",
     answer:
-      "Go to our official website and create an account. You'll need to provide some basic information and agree to our terms and conditions.",
+      "Este recomandat să mergi la psiholog atunci când te confrunți cu anxietate, atacuri de panică, depresie, stres, dificultăți relaționale sau când simți că o problemă emoțională îți afectează viața de zi cu zi. De asemenea, consilierea psihologică este utilă și pentru dezvoltare personală, claritate și prevenție.",
   },
   {
     id: 2,
-    question: "Can I customize AI SaaS solutions?",
+    question: "Ce se întâmplă la prima ședință la psiholog?",
     answer:
-      "AI SaaS platforms offer customization options to adapt their services to your specific requirements. It's best to inquire with the provider about customization capabilities.",
+      "Prima ședință la psiholog este una de evaluare și cunoaștere. Discutăm despre motivele pentru care ai solicitat consilierea, istoricul dificultăților și obiectivele tale. Este un prim pas pentru a înțelege dacă terapia este potrivită pentru tine și ce direcție vom urma.",
   },
   {
     id: 3,
-    question: "How can AI benefit my business?",
+    question: "Cât durează terapia psihologică?",
     answer:
-      "AI SaaS can enhance operational efficiency, automate tasks, improve decision-making with data insights, and provide personalized customer experiences.",
+      "Durata terapiei psihologice diferă în funcție de problemă, de obiectivele stabilite și de ritmul fiecărei persoane. Unele persoane observă rezultate după câteva ședințe, în timp ce altele au nevoie de un proces mai îndelungat. Terapia este personalizată și adaptată nevoilor fiecărui client.",
+  },
+  {
+    id: 4,
+    question: "Ședințele de terapie sunt confidențiale?",
+    answer:
+      "Da, ședințele de terapie psihologică sunt confidențiale. Psihologul are obligația profesională și legală de a respecta confidențialitatea informațiilor discutate în cabinet, cu excepțiile prevăzute de lege. Acest lucru asigură un spațiu sigur și de încredere pentru client.",
+  },
+  {
+    id: 5,
+    question: "Lucrează psihologul cu copii, adolescenți și cupluri?",
+    answer:
+      "Da, cabinetul oferă consiliere psihologică pentru adulți, copii și adolescenți, precum și consiliere de cuplu. Intervenția este adaptată vârstei, contextului și dificultăților specifice, cu accent pe soluții practice și sprijin emoțional.",
   },
 ];
 
@@ -59,11 +71,9 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
               data-aos-delay="500"
               style={{ marginTop: "200px" }}
             >
-              <h2>Freely ask us for more information</h2>
+              <h2>Intrebari pe care le primesc frecvent</h2>
               <p>
-                Our AI SaaS solutions can be quickly deployed, enabling users to
-                start benefiting from AI capabilities without lengthy setup and
-                development times in fast-paced industries.
+                Voi raspunde cu placere oricaror intrebari aveti, aici imi dau silinta sa ofer raspuns catorva intrebari numa. Daca nu gasiti raspunsul cautat, nu ezitati sa ma contactati.
               </p>
               <div className="mt-50">
                 <Link
@@ -71,9 +81,9 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                   data-aos="fade-up"
                   data-aos-delay="700"
                   href="#faq"
-                  data-text="Ask you questions"
+                  data-text="Contact"
                 >
-                  <span className="button-wraper">Ask you questions</span>
+                  <span className="button-wraper">Contact</span>
                 </Link>
               </div>
             </div>

@@ -19,7 +19,18 @@ export default function HeaderThree() {
             <div className="col-8 col-sm-auto ">
               <div className="header-logo">
                 <Link href="/">
-                  <img src="/assets/images/logo-1-dark.svg" alt="logo" />
+                  <span
+                    style={{
+                      color: "#24293c",
+                      fontWeight: 700,
+                      fontSize: "20px",
+                      letterSpacing: "0.5px",
+                      textTransform: "uppercase",
+                      display: "inline-block",
+                    }}
+                  >
+                    Gabriel Anthoni
+                  </span>
                 </Link>
               </div>
             </div>

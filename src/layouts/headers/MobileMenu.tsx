@@ -35,7 +35,18 @@ export default function MobileMenu({ setIsOpen, isOpen }: MobileMenuProps) {
           <div className="azzle-menu-mobile-top">
             <div className="mobile-logo">
               <Link href="/">
-                <img src="assets/images/logo/logo-dark.svg" alt="logo" />
+                <span
+                  style={{
+                    color: "#24293c",
+                    fontWeight: 700,
+                    fontSize: "18px",
+                    letterSpacing: "0.5px",
+                    textTransform: "uppercase",
+                    display: "inline-block",
+                  }}
+                >
+                  Gabriel Anthoni
+                </span>
               </Link>
             </div>
             <button className="azzle-menu-toggle mobile" onClick={() => setIsOpen && setIsOpen(false)}>
