@@ -36,7 +36,7 @@ export default function FooterOne() {
               <div className="azzle-footer-menu">
                 <h4>Linkuri rapide</h4>
                 <ul>
-                  <li><Link href="#services">Servicii</Link></li>
+                  <li><Link href="#features">Servicii</Link></li>
                   <li><Link href="#faq">Întrebări frecvente</Link></li>
                   <li><Link href="#contact">Contact</Link></li>
                 </ul>

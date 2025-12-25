@@ -1,4 +1,5 @@
-import menu_data from "@/data/menu-data";
+import type React from "react";
+import navigationLinks from "@/data/navigation-links";
 import Link from "next/link";
 
 interface NavmenuProps {
@@ -32,10 +33,10 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
 
   return (
     <ul>
-      {menu_data.map((item, i) => (
-        <li key={i} className={`${item.has_submenu ? "menu-item-has-children" : ""}`}>
+      {navigationLinks.map((item, i) => (
+        <li key={i} className={`${item.hasSubmenu ? "menu-item-has-children" : ""}`}>
           <Link
-            href={item.path}
+            href={item.href}
             className={`${menu_style ? "light-color" : ""}`}
             style={{
               ...baseStyle,
@@ -46,13 +47,13 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
           >
             {item.title}
           </Link>
-          {item.has_submenu &&
+          {item.hasSubmenu && item.subLinks &&
             <ul className="sub-menu">
-              {item.sub_menus?.map((sub_item, index) => (
-                <li key={index} className={`${sub_item.has_inner_submenu ? "menu-item-has-children" : ""}`}>
+              {item.subLinks.map((subItem, index) => (
+                <li key={index} className={`${subItem.hasSubmenu ? "menu-item-has-children" : ""}`}>
                   <Link
                     className="no-border"
-                    href={sub_item.path}
+                    href={subItem.href}
                     style={{
                       ...baseStyle,
                       padding: "6px 12px",
@@ -61,14 +62,14 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
                     onMouseEnter={hoverOn}
                     onMouseLeave={hoverOff}
                   >
-                    {sub_item.title}
+                    {subItem.title}
                   </Link>
-                  {sub_item.has_inner_submenu &&
+                  {subItem.hasSubmenu && subItem.subLinks &&
                     <ul className="sub-menu">
-                      {sub_item.sub_menus?.map((inner_item, inner_index) => (
-                        <li key={inner_index}>
+                      {subItem.subLinks.map((innerItem, innerIndex) => (
+                        <li key={innerIndex}>
                           <Link
-                            href={inner_item.path}
+                            href={innerItem.href}
                             style={{
                               ...baseStyle,
                               padding: "6px 12px",
@@ -77,7 +78,7 @@ export default function Navmenu({ menu_style = false }: NavmenuProps) {
                             onMouseEnter={hoverOn}
                             onMouseLeave={hoverOff}
                           >
-                            {inner_item.title}
+                            {innerItem.title}
                           </Link>
                         </li>
                       ))}
