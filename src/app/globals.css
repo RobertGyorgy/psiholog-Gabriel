@@ -559,10 +559,7 @@ html, body {
 	color: #fff !important;
 }
 
-/* Arrow SVG colors - no filter needed, use proper fill color in SVG */
-.azzle-section-padding.pt-0 .azzle-listicon-wrap img {
-	/* Filter removed - SVGs now use correct fill color */
-}
+/* Arrow SVG colors handled directly in SVG fill attributes */
 
 /* Modal animations */
 @keyframes fadeIn {
