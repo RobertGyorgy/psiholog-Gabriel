@@ -122,7 +122,7 @@ export default function PricingHomeOne() {
                     e.currentTarget.style.color = 'rgba(36, 41, 60)';
                   }}
                 >
-                  Read More
+                  Mai mult
                 </button>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default function PricingHomeOne() {
                     e.currentTarget.style.color = 'rgba(36, 41, 60)';
                   }}
                 >
-                  Read More
+                  Mai mult
                 </button>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function PricingHomeOne() {
                     e.currentTarget.style.color = 'rgba(36, 41, 60)';
                   }}
                 >
-                  Read More
+                  Mai mult
                 </button>
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function PricingHomeOne() {
                     e.currentTarget.style.color = 'rgba(36, 41, 60)';
                   }}
                 >
-                  Read More
+                  Mai mult
                 </button>
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function PricingHomeOne() {
                     e.currentTarget.style.color = 'rgba(36, 41, 60)';
                   }}
                 >
-                  Read More
+                  Mai mult
                 </button>
               </div>
             </div>

@@ -6,7 +6,7 @@ export interface NavigationLink {
 }
 
 export const navigationLinks: NavigationLink[] = [
-  { title: "Home", href: "/" },
+  { title: "Home", href: "#hero" },
   { title: "Despre", href: "#about" },
   { title: "Servicii", href: "#features" },
   { title: "Blog", href: "#portfolio" },

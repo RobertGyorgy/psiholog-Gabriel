@@ -28,7 +28,7 @@ const settings = {
 
 export default function HeroHomeOne() {
   return (
-    <div className="azzle-hero-section">
+    <div id="hero" className="azzle-hero-section">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5">
@@ -38,18 +38,20 @@ export default function HeroHomeOne() {
 Cabinet privat. Ședințe individuale. Confidențialitate 
 </p>
               <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-                <InteractiveHoverButton 
-                  text="Despre mine" 
-                  onClick={() => window.location.href = '#contact'}
-                  className="w-44 !bg-[rgba(197,166,99,1)] !text-[rgba(36,41,60)] !border-[rgba(197,166,99,1)] !border-2"
-                  style={{ minHeight: '48px' }}
-                />
-                <InteractiveHoverButton 
-                  text="Servicii" 
-                  onClick={() => window.location.href = '#features'}
-                  className="w-44 yellow-hover !bg-white !text-[rgba(197,166,99,1)] !border-[rgba(197,166,99,1)] !border-2"
-                  style={{ minHeight: '48px' }}
-                />
+                <Link href="#about" style={{ textDecoration: 'none' }}>
+                  <InteractiveHoverButton 
+                    text="Despre mine" 
+                    className="w-44 !bg-[rgba(197,166,99,1)] !text-[rgba(36,41,60)] !border-[rgba(197,166,99,1)] !border-2"
+                    style={{ minHeight: '48px' }}
+                  />
+                </Link>
+                <Link href="#features" style={{ textDecoration: 'none' }}>
+                  <InteractiveHoverButton 
+                    text="Servicii" 
+                    className="w-44 yellow-hover !bg-white !text-[rgba(197,166,99,1)] !border-[rgba(197,166,99,1)] !border-2"
+                    style={{ minHeight: '48px' }}
+                  />
+                </Link>
               </div>
             </div>
           </div>

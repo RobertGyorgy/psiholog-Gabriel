@@ -149,7 +149,7 @@ export default function FeaturesHomeOne() {
                       e.currentTarget.style.color = '#24293c';
                     }}
                   >
-                    Read more
+                    Mai mult
                   </button>
                 </div>
               </div>

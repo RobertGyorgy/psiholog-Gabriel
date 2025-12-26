@@ -32,7 +32,7 @@ export default function HeaderOne() {
           }}
         >
           <div className="header-logo">
-            <Link href="/">
+            <Link href="#hero">
               <span
                 style={{
                   color: "#24293c",

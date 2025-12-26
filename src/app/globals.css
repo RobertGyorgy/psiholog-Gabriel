@@ -587,6 +587,49 @@ html, body {
 	overflow: hidden !important;
 }
 
+/* Fix FAQ hover animations */
+.azzle-faq-item {
+	transition: padding-bottom 0.4s ease, margin-bottom 0.4s ease, border-color 0.4s ease !important;
+}
+
+.azzle-faq-header {
+	transition: padding-bottom 0.4s ease !important;
+}
+
+.azzle-faq-header:hover {
+	opacity: 0.9;
+}
+
+.azzle-active-icon img {
+	transition: transform 0.3s ease !important;
+	will-change: transform;
+}
+
+/* Fix FAQ contact button hover - prevent text from moving outside */
+.faq-contact-btn .button-wraper {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+.faq-contact-btn:hover .button-wraper {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+.faq-contact-btn::after {
+	display: none !important;
+}
+
+/* Scroll positioning for sections */
+#faq {
+	scroll-margin-top: 150px;
+}
+
+#contact,
+.azzle-footer-section {
+	scroll-margin-top: 120px;
+}
+
 /* Therapy icons: keep outlines, turn gold on hover */
 .azzle-iconbox-wrap .feature-icon svg,
 .azzle-iconbox-wrap .feature-icon svg * {

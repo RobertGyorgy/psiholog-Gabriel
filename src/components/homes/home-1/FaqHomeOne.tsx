@@ -1,8 +1,7 @@
 
 
 "use client";
-import { useState } from "react";
-import Link from "next/link"; 
+import { useState } from "react"; 
  
 
 interface FaqItem {
@@ -76,15 +75,28 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                 Voi raspunde cu placere oricaror intrebari aveti, aici imi dau silinta sa ofer raspuns catorva intrebari numa. Daca nu gasiti raspunsul cautat, nu ezitati sa ma contactati.
               </p>
               <div className="mt-50">
-                <Link
-                  className="azzle-default-btn"
+                <a
+                  href="https://wa.me/40728561826"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="azzle-default-btn faq-contact-btn"
                   data-aos="fade-up"
                   data-aos-delay="700"
-                  href="#faq"
-                  data-text="Contact"
+                  style={{
+                    display: 'inline-block',
+                    textDecoration: 'none',
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#25D366';
+                    e.currentTarget.style.color = '#fff';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(197, 166, 99, 1)';
+                    e.currentTarget.style.color = '#24293c';
+                  }}
                 >
                   <span className="button-wraper">Contact</span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -108,6 +120,12 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                     className="azzle-faq-header"
                     onClick={() => toggleFaq(faq.id)}
                     style={{ cursor: "pointer" }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.opacity = "0.9";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.opacity = "1";
+                    }}
                   >
                     <h3>{faq.question}</h3>
                     <div className="azzle-active-icon">
@@ -116,8 +134,9 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                         alt="toggle"
                         style={{
                           transform:
-                            activeId === faq.id ? "rotate(45deg)" : "rotate(0)",
+                            activeId === faq.id ? "rotate(45deg)" : "rotate(0deg)",
                           transition: "transform 0.3s ease",
+                          willChange: "transform",
                         }}
                       />
                     </div>
@@ -127,9 +146,10 @@ export default function FaqHomeOne({ style_2 = false }: StyleProps) {
                     style={{
                       maxHeight: activeId === faq.id ? "500px" : "0px",
                       overflow: "hidden",
-                      transition: "max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out",
+                      transition: "max-height 0.5s ease-in-out, padding-top 0.5s ease-in-out, opacity 0.5s ease-in-out",
                       opacity: activeId === faq.id ? 1 : 0,
                       paddingTop: activeId === faq.id ? "12px" : "0px",
+                      paddingBottom: activeId === faq.id ? "0px" : "0px",
                     }}
                   >
                     <p>{faq.answer}</p>

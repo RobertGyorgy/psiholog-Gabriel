@@ -8,6 +8,7 @@ declare global {
     ScrollTrigger: any;
     ScrollSmoother: any;
     SplitText: any;
+    smootherInstance: any;
   }
 }
 
@@ -83,12 +84,15 @@ export default function ScrollAnimations() {
         const wrapper = document.querySelector("#smooth-wrapper");
         const content = document.querySelector("#smooth-content");
         if (wrapper && content) {
-          ScrollSmoother.create({
+          const smoother = ScrollSmoother.create({
             wrapper: wrapper,
             content: content,
             smooth: 1.5,
             effects: true,
           });
+          // Store smoother instance globally for SmoothScroll component
+          window.ScrollSmoother = ScrollSmoother;
+          window.smootherInstance = smoother;
           console.log("✓ ScrollSmoother created");
         }
       } catch (e) {

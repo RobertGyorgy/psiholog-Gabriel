@@ -26,8 +26,37 @@ export default function FooterOne() {
                 <p>
                   Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj. Cabinet privat. Ședințe individuale. Confidențialitate.
                 </p>
-                <a href="tel:+40728561826">
-                  <span>Număr de telefon:</span> +40 728 561 826
+                <a href="tel:+40728561826" style={{ display: 'block', marginBottom: '20px', color: '#24293c', textDecoration: 'none' }}>
+                  <span style={{ fontWeight: 600 }}>Număr de telefon:</span> +40 728 561 826
+                </a>
+                <a
+                  href="https://wa.me/40728561826"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-block',
+                    background: 'rgba(197, 166, 99, 1)',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: '12px 28px',
+                    borderRadius: '50px',
+                    color: '#24293c',
+                    fontSize: '16px',
+                    fontWeight: '600',
+                    textDecoration: 'none',
+                    transition: 'all 0.3s ease',
+                    marginTop: '10px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = '#25D366';
+                    e.currentTarget.style.color = '#fff';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = 'rgba(197, 166, 99, 1)';
+                    e.currentTarget.style.color = '#24293c';
+                  }}
+                >
+                  Contactează-mă pe WhatsApp
                 </a>
               </div>
             </div>
