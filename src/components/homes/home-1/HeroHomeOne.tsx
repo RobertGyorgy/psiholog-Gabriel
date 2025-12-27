@@ -42,15 +42,15 @@ Cabinet privat.<br />Ședințe individuale. Confidențialitate
                 <Link href="#about" style={{ textDecoration: 'none' }}>
                   <InteractiveHoverButton
                     text="Despre mine"
-                    className="w-44 !bg-[rgba(197,166,99,1)] !text-[rgba(36,41,60)] !border-[rgba(197,166,99,1)] !border-2"
-                    style={{ minHeight: '48px', whiteSpace: 'nowrap' }}
+                    className="w-36 md:w-44 !bg-[rgba(197,166,99,1)] !text-[rgba(36,41,60)] !border-[rgba(197,166,99,1)] !border-2"
+                    style={{ minHeight: '48px', whiteSpace: 'nowrap', fontSize: '14px' }}
                   />
                 </Link>
                 <Link href="#testimonials" style={{ textDecoration: 'none' }}>
                   <InteractiveHoverButton
                     text="Testimoniale"
-                    className="w-44 yellow-hover !bg-white !text-[rgba(197,166,99,1)] !border-[rgba(197,166,99,1)] !border-2"
-                    style={{ minHeight: '48px', whiteSpace: 'nowrap' }}
+                    className="w-36 md:w-44 yellow-hover !bg-white !text-[rgba(197,166,99,1)] !border-[rgba(197,166,99,1)] !border-2"
+                    style={{ minHeight: '48px', whiteSpace: 'nowrap', fontSize: '14px' }}
                   />
                 </Link>
               </div>
