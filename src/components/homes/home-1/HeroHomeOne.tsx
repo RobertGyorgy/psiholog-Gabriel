@@ -35,7 +35,7 @@ export default function HeroHomeOne() {
             <div className="azzle-hero-content1">
               <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "36px", paddingBottom: "20px" }}>Cabinet Psihologic </h1>
               <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "36px", paddingBottom: "20px" }}> Gabriel Antohi</h1>
-              <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "16px" }}>Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj
+              <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "14px" }}>Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj
   <br />Cabinet privat.Ședințe individuale. Confidențialitate
 </p>
               <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "nowrap" }}>
