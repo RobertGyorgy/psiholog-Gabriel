@@ -11,7 +11,7 @@ export const navigationLinks: NavigationLink[] = [
   { title: "Servicii", href: "#features" },
   { title: "Blog", href: "#portfolio" },
   { title: "Întrebări frecvente", href: "#faq" },
-  { title: "Contact", href: "#contact" },
+  { title: "Testimoniale", href: "#testimonials" },
 ];
 
 export default navigationLinks;

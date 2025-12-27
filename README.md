@@ -1,4 +1,4 @@
-# Psiholog - Gabriel Anthoni
+# Psiholog - Gabriel Antohi
 
 Website for psychology practice offering therapy services including individual therapy, couple therapy, group therapy, and coaching.
 

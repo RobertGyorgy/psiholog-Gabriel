@@ -82,10 +82,10 @@ export default function AboutHomeOne() {
                   <ul>
                     <li>
                      
-                      <h3>Gata pentru o terapie care ofera rezultate?</h3>
+                      <h3>Sprijin psihologic adaptat nevoilor tale</h3>
                     </li>
                     <li>                     
-                      <h3>Nu neglija problemele mentale</h3>
+                      <h3>Totul incepe cu o discutie</h3>
                     </li>
                     <li>
                       <a 
@@ -114,7 +114,7 @@ export default function AboutHomeOne() {
                           e.currentTarget.style.color = '#24293c';
                         }}
                       >
-                        Contactează-mă
+                        Hai sa vorbim.
                       </a>
                     </li>
                   </ul>

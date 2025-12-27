@@ -33,23 +33,24 @@ export default function HeroHomeOne() {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div className="azzle-hero-content1">
-              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "64px", paddingBottom: "20px" }}>Cabinet - Psiholog Gabriel Anthoni</h1>
+              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "45px", paddingBottom: "20px" }}>Cabinet Psihologic </h1>
+              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "45px", paddingBottom: "20px" }}> Gabriel Antohi</h1>
               <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "18px" }}>Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj
-Cabinet privat. Ședințe individuale. Confidențialitate 
+Cabinet privat.<br />Ședințe individuale. Confidențialitate
 </p>
-              <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+              <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "nowrap" }}>
                 <Link href="#about" style={{ textDecoration: 'none' }}>
-                  <InteractiveHoverButton 
-                    text="Despre mine" 
+                  <InteractiveHoverButton
+                    text="Despre mine"
                     className="w-44 !bg-[rgba(197,166,99,1)] !text-[rgba(36,41,60)] !border-[rgba(197,166,99,1)] !border-2"
-                    style={{ minHeight: '48px' }}
+                    style={{ minHeight: '48px', whiteSpace: 'nowrap' }}
                   />
                 </Link>
-                <Link href="#features" style={{ textDecoration: 'none' }}>
-                  <InteractiveHoverButton 
-                    text="Servicii" 
+                <Link href="#testimonials" style={{ textDecoration: 'none' }}>
+                  <InteractiveHoverButton
+                    text="Testimoniale"
                     className="w-44 yellow-hover !bg-white !text-[rgba(197,166,99,1)] !border-[rgba(197,166,99,1)] !border-2"
-                    style={{ minHeight: '48px' }}
+                    style={{ minHeight: '48px', whiteSpace: 'nowrap' }}
                   />
                 </Link>
               </div>

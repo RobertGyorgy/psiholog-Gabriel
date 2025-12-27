@@ -20,9 +20,9 @@ export default function FeaturesHomeOne() {
 
   const features: FeatureDetails[] = [
     {
-      title: "Terpaie individuala",
+      title: "Terapie individuala",
       shortDesc: "Spatiu sigur pentru a explora ce te preocupa, in ritmul tau.",
-      fullDesc: "Anxietate, atacuri de panică, fobii\n Teama devine filtrul prin care privești lumea, limitându-ți alegerile și transformând viața într-un exercițiu constant de evitare.\n\nDepresie\nTotul pare greu, gol și lipsit de sens – te simți deconectat de tine însuți și incapabil să mai simți bucurie.\n\nStimă de sine scăzută\nTe judeci mai dur decât ai face-o cu oricine altcineva și crezi că nu ești suficient de bun, indiferent de ceea ce realizezi.\n\nTulburări de somn și alimentație\nCorpul tău nu mai găsește echilibrul – fie că este vorba de nopți albe, coșmaruri sau o relație haotică cu mâncarea.\n\nDependențe\nCeea ce părea o soluție temporară devine acum centrul vieții tale, controlându-ți alegerile și relațiile.\n\nTraume\nTrecutul refuză să rămână în trecut și continuă să îți invadeze prezentul prin amintiri, tensiune constantă sau evitare.\n\nDoliu\nLumea s-a oprit pentru tine, dar continuă pentru ceilalți – iar tu te simți pierdut într-o durere pe care nimeni nu o mai înțelege pe deplin.\n\nStres profesional\nMunca îți consumă energia, sănătatea și bucuria, transformând ceea ce ar trebui să fie o parte a vieții într-o povară care acoperă totul.\n\nDificultăți de comunicare sau luare a deciziilor\nTe simți blocat între nevoia de a te exprima și teama de conflict, sau între dorința de a avansa și frica de a greși.",
+      fullDesc: "<strong>Anxietate, atacuri de panică, fobii</strong>\nTeama devine filtrul prin care privești lumea, limitându-ți alegerile și transformând viața într-un exercițiu constant de evitare.\n\n<strong>Depresie</strong>\nTotul pare greu, gol și lipsit de sens – te simți deconectat de tine însuți și incapabil să mai simți bucurie.\n\n<strong>Stimă de sine scăzută</strong>\nTe judeci mai dur decât ai face-o cu oricine altcineva și crezi că nu ești suficient de bun, indiferent de ceea ce realizezi.\n\n<strong>Tulburări de somn și alimentație</strong>\nCorpul tău nu mai găsește echilibrul – fie că este vorba de nopți albe, coșmaruri sau o relație haotică cu mâncarea.\n\n<strong>Dependențe</strong>\nCeea ce părea o soluție temporară devine acum centrul vieții tale, controlându-ți alegerile și relațiile.\n\n<strong>Traume</strong>\nTrecutul refuză să rămână în trecut și continuă să îți invadeze prezentul prin amintiri, tensiune constantă sau evitare.\n\n<strong>Doliu</strong>\nLumea s-a oprit pentru tine, dar continuă pentru ceilalți – iar tu te simți pierdut într-o durere pe care nimeni nu o mai înțelege pe deplin.\n\n<strong>Stres profesional</strong>\nMunca îți consumă energia, sănătatea și bucuria, transformând ceea ce ar trebui să fie o parte a vieții într-o povară care acoperă totul.\n\n<strong>Dificultăți de comunicare sau luare a deciziilor</strong>\nTe simți blocat între nevoia de a te exprima și teama de conflict, sau între dorința de a avansa și frica de a greși.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" aria-hidden="true" focusable="false">
           <circle cx="35" cy="20" r="10" stroke="#24293c" strokeWidth="3" />
@@ -44,7 +44,7 @@ export default function FeaturesHomeOne() {
       )
     },
     {
-      title: "Terapie in Grup",
+      title: "Terapie de Grup",
       shortDesc: "Vindecare prin descoperirea ca nu ești singur",
       fullDesc: "Terapia de grup îți oferă ceva ce terapia individuală nu-ți poate oferi – experiența că nu ești singur în ceea ce trăiești. Într-un mediu sigur și confidențial, vei descoperi că alții se confruntă cu provocări similare, iar această recunoaștere reciprocă devine în sine vindecătoare. Vei învăța din experiențele celorlalți, vei primi perspective diferite și vei construi abilități de comunicare și empatie într-un context real, de susținere reciprocă.\nGrupul funcționează ca un microcosmos al lumii reale, unde poți exersa noi comportamente, poți primi feedback onest și poți experimenta sentimentul de apartenență. Este un spațiu în care vulnerabilitatea este respectată, progresul celorlalți te inspiră, iar fiecare persoană contribuie la vindecarea tuturor. Terapia de grup este eficientă pentru anxietate, depresie, dificultăți relaționale, dezvoltare personală și multe alte provocări – iar puterea colectivului amplifică procesul terapeutic individual.",
       icon: (
@@ -120,7 +120,7 @@ export default function FeaturesHomeOne() {
                   {feature.icon}
                 </div>
                 <div className="azzle-iconbox-content">
-                  <h3>{feature.title}</h3>
+                  <h3 style={{ fontWeight: 'bold', fontSize: '1.1em' }}>{feature.title}</h3>
                   <p>{feature.shortDesc}</p>
                 </div>
                 <div className="azzle-iconbox-button mt-50">
@@ -231,15 +231,15 @@ export default function FeaturesHomeOne() {
               </div>
               <h2 style={{ margin: 0, color: '#24293c', fontSize: '32px' }}>{selectedFeature.title}</h2>
             </div>
-            <p style={{ 
-              fontSize: '16px', 
-              lineHeight: '1.8', 
+            <p style={{
+              fontSize: '16px',
+              lineHeight: '1.8',
               color: '#333',
               marginBottom: '0',
               whiteSpace: 'pre-wrap'
-            }}>
-              {selectedFeature.fullDesc}
-            </p>
+            }}
+            dangerouslySetInnerHTML={{ __html: selectedFeature.fullDesc }}
+            />
           </div>
         </div>
       </div>

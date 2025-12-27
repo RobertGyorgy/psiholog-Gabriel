@@ -4,7 +4,7 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Psiholog - Gabriel Anthoni",
+  title: "Psiholog - Gabriel Antohi",
   description: "Cabinet de psihologie oferind terapie individuală, de cuplu și de familie. Sprijin pentru sănătatea mentală și bunăstare emoțională.",
 };
 

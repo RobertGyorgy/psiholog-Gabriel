@@ -6,7 +6,7 @@ export default function TestimonialHomeOne() {
   };
 
   return (
-    <div id="team" className="azzle-section-padding3 bg-heading">
+    <div id="testimonials" className="azzle-section-padding3 bg-heading">
       <div className="container">
         <div className="azzle-section-title title2 center" data-aos="fade-up" data-aos-delay="500">
           <h2>Ce spun pacienții mei</h2>

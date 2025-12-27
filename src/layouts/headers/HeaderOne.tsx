@@ -44,7 +44,7 @@ export default function HeaderOne() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Gabriel Anthoni
+                Gabriel Antohi
               </span>
             </Link>
           </div>

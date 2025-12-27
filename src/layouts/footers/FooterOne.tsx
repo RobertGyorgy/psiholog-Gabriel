@@ -20,7 +20,7 @@ export default function FooterOne() {
                       letterSpacing: "0.5px",
                     }}
                   >
-                    Gabriel Anthoni
+                    Gabriel Antohi
                   </span>
                 </Link>
                 <p>
@@ -77,7 +77,7 @@ export default function FooterOne() {
         {/* Bottom */}
         <div className="azzle-footer-bottom-text">
           <p>
-            © Copyright {new Date().getFullYear()}, Gabriel Anthoni. Made by {" "}
+            © Copyright {new Date().getFullYear()}, Gabriel Antohi. Made by {" "}
             <a href="https://www.achieve.ro/" target="_blank" rel="noreferrer">
               achieve.ro
             </a>
