@@ -33,10 +33,10 @@ export default function HeroHomeOne() {
         <div className="row align-items-center">
           <div className="col-lg-5">
             <div className="azzle-hero-content1">
-              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "45px", paddingBottom: "20px" }}>Cabinet Psihologic </h1>
-              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "45px", paddingBottom: "20px" }}> Gabriel Antohi</h1>
-              <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "18px" }}>Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj
-Cabinet privat.<br />Ședințe individuale. Confidențialitate
+              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "36px", paddingBottom: "20px" }}>Cabinet Psihologic </h1>
+              <h1 data-aos="fade-left" data-aos-delay="500" style={{ fontSize: "36px", paddingBottom: "20px" }}> Gabriel Antohi</h1>
+              <p data-aos="zoom-in" data-aos-delay="700" style={{ fontSize: "16px" }}>Sprijin psihologic pentru anxietate, relații, performanță și momente de blocaj
+ Cabinet privat.<br />Ședințe individuale. Confidențialitate
 </p>
               <div className="azzle-hero-button mt-50" style={{ display: "flex", gap: "16px", flexWrap: "nowrap" }}>
                 <Link href="#about" style={{ textDecoration: 'none' }}>
